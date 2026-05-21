@@ -1,0 +1,92 @@
+[
+  {
+    "id": "rag-agent-system",
+    "title": "RAG Agent System",
+    "company": "Envíame",
+    "tagline": "Arquitectura de agentes AI que mejoró la precisión de respuestas internas en 70%.",
+    "type": "professional",
+    "repoPublic": false,
+    "period": "2023–presente",
+    "problem": "Los sistemas internos de Envíame necesitaban acceso preciso a datos propietarios de logística. Las búsquedas genéricas fallaban con información específica del negocio, requiriendo intervención manual constante.",
+    "solution": "Diseñé e implementé una arquitectura RAG completa con ADK (Agent Development Kit) y LangChain: pipeline de ingesta de documentos, generación de embeddings, vector search y agentes autónomos capaces de responder consultas en tiempo real sobre datos propietarios.",
+    "results": [
+      "+70% mejora en precisión de respuestas en sistemas internos",
+      "Automatización de operaciones que antes requerían intervención manual diaria",
+      "Reducción de tiempo de resolución de consultas internas"
+    ],
+    "tech": ["Python", "LangChain", "ADK", "RAG", "Vector DBs", "MCP", "GCP", "FastAPI"],
+    "highlight": true
+  },
+  {
+    "id": "grpc-microservices",
+    "title": "gRPC Microservices Optimization",
+    "company": "Envíame",
+    "tagline": "Refactoring de comunicación entre microservicios: -25% latencia, -50% recursos en GCP.",
+    "type": "professional",
+    "repoPublic": false,
+    "period": "2024",
+    "problem": "Los microservicios de Envíame se comunicaban vía REST con alto overhead de serialización JSON. Bajo carga pico, la latencia era inaceptable y el uso de recursos en GCP era desproporcionado al volumen de datos.",
+    "solution": "Migración estratégica de REST a gRPC con Protocol Buffers: redefinición de contratos de servicio, implementación de streaming bidireccional donde correspondía, y optimización de resource pooling en GCP.",
+    "results": [
+      "-25% reducción de latencia de red",
+      "-50% mejora en utilización de recursos en GCP (reducción directa de costos)",
+      "Mayor throughput sostenido bajo carga pico"
+    ],
+    "tech": ["Python", "gRPC", "Protocol Buffers", "GCP", "Docker"],
+    "highlight": true
+  },
+  {
+    "id": "medical-management-platform",
+    "title": "Medical Management Platform",
+    "company": "DEVOCAMP",
+    "tagline": "Plataforma HealthTech con 99.5% uptime procesando +10,000 peticiones diarias.",
+    "type": "professional",
+    "repoPublic": false,
+    "period": "2022–2023",
+    "problem": "Un sistema médico legacy con baja performance gestionaba registros de pacientes, citas y flujos clínicos. Las consultas lentas afectaban la experiencia de médicos y pacientes, y las integraciones con terceros no cumplían estándares HIPAA.",
+    "solution": "Rediseño del core backend con Django + DRF, optimización de queries MySQL mediante ORM tuning e indexación estratégica, y reingeniería de las integraciones con APIs de sistemas de salud para asegurar compliance HIPAA.",
+    "results": [
+      "+10,000 peticiones diarias sostenidas con 99.5% uptime",
+      "+30% mejora en performance de queries críticas",
+      "Compliance HIPAA mantenido en todas las integraciones con sistemas de salud"
+    ],
+    "tech": ["Python", "Django", "DRF", "MySQL", "Docker", "REST APIs"],
+    "highlight": true
+  },
+  {
+    "id": "ai-agent-suite",
+    "title": "AI Agent Suite",
+    "company": null,
+    "tagline": "Suite modular de agentes conversacionales empresariales con acceso a datos en tiempo real.",
+    "type": "personal",
+    "repoPublic": false,
+    "period": "2024–2025",
+    "problem": "Las empresas necesitan agentes que respondan sobre sus propios datos sin reentrenar modelos ni exponer APIs sensibles. Las soluciones genéricas no se adaptan al contexto específico de cada negocio.",
+    "solution": "Arquitectura modular con LangChain + ADK + MCP: los agentes consumen herramientas personalizadas, consultan bases de datos en tiempo real y mantienen contexto multi-turno. Diseñado para ser desplegable en múltiples dominios sin cambios en el core.",
+    "results": [
+      "Suite reutilizable aplicada en múltiples dominios de negocio",
+      "Base de la arquitectura de agentes desplegada en producción en Envíame",
+      "Reducción del tiempo de setup de nuevos agentes empresariales"
+    ],
+    "tech": ["Python", "LangChain", "ADK", "MCP", "Vector DBs", "FastAPI", "PostgreSQL"],
+    "highlight": false
+  },
+  {
+    "id": "legal-scraping-system",
+    "title": "Legal Scraping Architecture",
+    "company": null,
+    "tagline": "Sistema distribuido de scraping para monitoreo automático de remates judiciales.",
+    "type": "personal",
+    "repoPublic": false,
+    "period": "2023",
+    "problem": "Abogados y compradores de activos debían revisar manualmente decenas de fuentes legales cada día para detectar nuevos remates judiciales. Proceso lento, propenso a errores y no escalable.",
+    "solution": "Arquitectura distribuida: Selenium para extracción web de fuentes legales, Celery + Redis para orquestación de tareas asíncronas, pipeline de normalización de datos y sistema de alertas cuando aparecen nuevos registros relevantes.",
+    "results": [
+      "Automatización completa del proceso de monitoreo diario",
+      "Escalable a nuevas fuentes legales sin cambios en la arquitectura base",
+      "Eliminación del trabajo manual de revisión de fuentes"
+    ],
+    "tech": ["Python", "Selenium", "Celery", "Redis", "PostgreSQL", "Docker"],
+    "highlight": false
+  }
+]

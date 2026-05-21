@@ -1,0 +1,112 @@
+[
+  {
+    "id": "enviame",
+    "company": "Envíame",
+    "role": "Backend Developer → AI Engineer",
+    "period": { "start": "2023-10", "end": null },
+    "periodLabel": "Octubre 2023 – Presente",
+    "duration": "2 años 8 meses",
+    "location": "Santiago, Chile (Remoto)",
+    "industry": "Logistics / eCommerce",
+    "teamSize": null,
+    "achievements": [
+      "Implementé arquitecturas RAG con ADK y LangChain mejorando la precisión de respuestas en sistemas internos en 70%.",
+      "Construí agentes autónomos con ADK para automatizar operaciones internas que requerían intervención manual diaria.",
+      "Optimicé la comunicación entre microservicios migrando de REST a gRPC, reduciendo latencia de red en 25% y uso de recursos en GCP en 50%.",
+      "Estandaricé flujos CI/CD con Docker y Bitbucket Pipelines, logrando una reducción del 50% en errores de producción.",
+      "Integré Amazon Selling Partner API y Mercado Libre API para sincronización automatizada de órdenes.",
+      "Mentoré a 3 junior developers en Python best practices, code reviews y system design."
+    ],
+    "techStack": ["Python", "LangChain", "ADK", "RAG", "gRPC", "GCP", "Docker", "CI/CD", "Bitbucket Pipelines", "MCP"]
+  },
+  {
+    "id": "devocamp-lead",
+    "company": "DEVOCAMP",
+    "role": "Team Lead",
+    "period": { "start": "2023-02", "end": "2023-08" },
+    "periodLabel": "Febrero 2023 – Agosto 2023",
+    "duration": "7 meses",
+    "location": "Weehawken, Nueva Jersey, EE.UU. (Remoto)",
+    "industry": "HealthTech / HRTech",
+    "teamSize": 5,
+    "achievements": [
+      "Lideré un equipo de 5 backend developers distribuidos en 3 zonas horarias garantizando entrega continua de sprints.",
+      "Aceleré la productividad del equipo en 25% mediante sesiones de mentoring, code reviews y guías de estándares de código.",
+      "Implementé pipelines de automatización que redujeron el ciclo de entrega en 20%.",
+      "Actué como punto de contacto técnico entre equipos de backend, frontend y producto."
+    ],
+    "techStack": ["Python", "Django", "DRF", "Node.js", "PostgreSQL", "Docker"]
+  },
+  {
+    "id": "devocamp-python",
+    "company": "DEVOCAMP",
+    "role": "Python Back End Developer",
+    "period": { "start": "2022-07", "end": "2023-10" },
+    "periodLabel": "Julio 2022 – Octubre 2023",
+    "duration": "1 año 4 meses",
+    "location": "Weehawken, Nueva Jersey, EE.UU. (Remoto)",
+    "industry": "HealthTech",
+    "teamSize": null,
+    "achievements": [
+      "Desarrollé plataforma de gestión médica que procesaba +10,000 peticiones diarias con 99.5% de uptime.",
+      "Mejoré el rendimiento de queries MySQL en 30% mediante optimización de ORM, indexación estratégica y rediseño de consultas críticas.",
+      "Gestioné integraciones con APIs de sistemas de salud garantizando compliance HIPAA y seguridad en el intercambio de datos.",
+      "Colaboré con equipos cross-funcionales manteniendo alineación con sprint goals."
+    ],
+    "techStack": ["Python", "Django", "DRF", "MySQL", "Docker", "REST APIs"]
+  },
+  {
+    "id": "devocamp-node",
+    "company": "DEVOCAMP",
+    "role": "Node.js Back-end Developer",
+    "period": { "start": "2023-02", "end": "2023-05" },
+    "periodLabel": "Febrero 2023 – Mayo 2023",
+    "duration": "4 meses",
+    "location": "Weehawken, Nueva Jersey, EE.UU. (Remoto)",
+    "industry": "HRTech",
+    "teamSize": null,
+    "achievements": [
+      "Construí el backend de la plataforma de reclutamiento con Node.js y Express, gestionando publicaciones de empleo, aplicaciones y flujos de contratación.",
+      "Diseñé e implementé APIs RESTful con autenticación, autorización y validación de datos.",
+      "Reduje tiempos de respuesta de la API en 35% implementando estrategias de caching.",
+      "Integré con job boards externos y ATS (Applicant Tracking Systems) para sincronización automática de candidatos."
+    ],
+    "techStack": ["Node.js", "Express.js", "PostgreSQL", "Redis", "REST APIs"]
+  },
+  {
+    "id": "teaching-assistant",
+    "company": "Universidad San Francisco Xavier",
+    "role": "Teaching Assistant — Bases de Datos",
+    "period": { "start": "2023-03", "end": "2023-11" },
+    "periodLabel": "Marzo 2023 – Noviembre 2023",
+    "duration": "9 meses",
+    "location": "Sucre, Bolivia",
+    "industry": "Educación",
+    "teamSize": null,
+    "achievements": [
+      "Guié a 60+ estudiantes en conceptos avanzados de bases de datos: normalización, optimización de queries, transacciones e indexación.",
+      "Mejoré el rendimiento de queries SQL de 10+ estudiantes en un promedio de 40% mediante técnicas de optimización personalizadas.",
+      "Diseñé y evalué 15+ ejercicios prácticos de SQL avanzado, stored procedures, triggers y patrones de diseño de BD.",
+      "Dirigí workshops prácticos sobre administración MySQL, estrategias de backup y performance tuning."
+    ],
+    "techStack": ["MySQL", "PostgreSQL", "SQL", "Modelado de datos"]
+  },
+  {
+    "id": "freelancer",
+    "company": "Freelancer",
+    "role": "Full-Stack Developer",
+    "period": { "start": "2021-12", "end": "2022-07" },
+    "periodLabel": "Diciembre 2021 – Julio 2022",
+    "duration": "8 meses",
+    "location": "Bolivia",
+    "industry": "Múltiples sectores locales",
+    "teamSize": null,
+    "achievements": [
+      "Entregué 4 aplicaciones web end-to-end con 100% de satisfacción del cliente y soporte post-lanzamiento durante 6 meses.",
+      "Reduje flujos manuales en 60% digitalizando procesos críticos de negocios locales.",
+      "Diseñé arquitecturas de bases de datos PostgreSQL desde cero con schemas normalizados y queries optimizados para respuesta sub-segundo.",
+      "Gestioné el ciclo completo de deployment en servidores VPS Linux: configuración Nginx, certificados SSL y monitoreo."
+    ],
+    "techStack": ["Python", "Django", "React", "PostgreSQL", "Nginx", "Linux", "VPS"]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "category": "Backend & Core Languages",
+    "icon": "🐍",
+    "skills": [
+      { "name": "Python",           "level": "expert",       "years": 4, "evidence": "Rol principal en Envíame y DEVOCAMP" },
+      { "name": "JavaScript",       "level": "advanced",     "years": 3, "evidence": "Node.js en DEVOCAMP, React en proyectos freelance" },
+      { "name": "TypeScript",       "level": "advanced",     "years": 2, "evidence": "Mencionado en GitHub stack" },
+      { "name": "SQL",              "level": "expert",       "years": 4, "evidence": "Teaching Assistant BD, optimizaciones 30-40% en producción" },
+      { "name": "Go",               "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" }
+    ]
+  },
+  {
+    "category": "AI & Agents",
+    "icon": "🤖",
+    "skills": [
+      { "name": "LangChain",       "level": "expert",       "years": 2, "evidence": "Arquitecturas RAG en Envíame, +70% precisión" },
+      { "name": "ADK (Agent Development Kit)", "level": "expert", "years": 2, "evidence": "Agentes autónomos en Envíame y AI Agent Suite" },
+      { "name": "RAG",             "level": "expert",       "years": 2, "evidence": "Implementado en producción en Envíame" },
+      { "name": "MCP",             "level": "advanced",     "years": 1, "evidence": "Mencionado en CV — AI Agent Suite" },
+      { "name": "Gemini API",      "level": "advanced",     "years": 1, "evidence": "Mencionado en GitHub stack" },
+      { "name": "n8n",             "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack — automatización" },
+      { "name": "Vector DBs",      "level": "advanced",     "years": 2, "evidence": "Parte del pipeline RAG en Envíame" }
+    ]
+  },
+  {
+    "category": "Backend Frameworks",
+    "icon": "⚡",
+    "skills": [
+      { "name": "Django",          "level": "expert",       "years": 3, "evidence": "Rol principal en DEVOCAMP, 1+ año" },
+      { "name": "Django REST Framework", "level": "expert", "years": 3, "evidence": "API core en DEVOCAMP HealthTech" },
+      { "name": "FastAPI",         "level": "advanced",     "years": 2, "evidence": "Mencionado en GitHub stack y CV" },
+      { "name": "Flask",           "level": "advanced",     "years": 2, "evidence": "Mencionado en GitHub stack" },
+      { "name": "Node.js",         "level": "advanced",     "years": 2, "evidence": "Rol Node.js Developer en DEVOCAMP HRTech" },
+      { "name": "Express.js",      "level": "advanced",     "years": 2, "evidence": "Backend recruiting app en DEVOCAMP" }
+    ]
+  },
+  {
+    "category": "Bases de Datos",
+    "icon": "🗄️",
+    "skills": [
+      { "name": "PostgreSQL",      "level": "expert",       "years": 4, "evidence": "Diseño de arquitecturas desde cero en proyectos freelance" },
+      { "name": "MySQL",           "level": "expert",       "years": 3, "evidence": "Optimización +30% en DEVOCAMP; Teaching Assistant" },
+      { "name": "MongoDB",         "level": "advanced",     "years": 2, "evidence": "Certificación CRUD; mencionado en GitHub stack" },
+      { "name": "Redis",           "level": "advanced",     "years": 2, "evidence": "Caching en DEVOCAMP -35% response time; Legal Scraping" },
+      { "name": "Firebase",        "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" },
+      { "name": "Supabase",        "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" }
+    ]
+  },
+  {
+    "category": "Cloud & DevOps",
+    "icon": "☁️",
+    "skills": [
+      { "name": "Google Cloud Platform (GCP)", "level": "advanced", "years": 2, "evidence": "Reducción 50% recursos en Envíame con gRPC" },
+      { "name": "Docker",          "level": "advanced",     "years": 3, "evidence": "CI/CD en Envíame, -50% errores producción" },
+      { "name": "CI/CD",           "level": "advanced",     "years": 2, "evidence": "Bitbucket Pipelines en Envíame" },
+      { "name": "Linux",           "level": "advanced",     "years": 4, "evidence": "VPS administration, Nginx, SSL en proyectos freelance" },
+      { "name": "Vercel",          "level": "intermediate", "years": 2, "evidence": "Mencionado en GitHub stack" },
+      { "name": "Render",          "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" }
+    ]
+  },
+  {
+    "category": "Protocolos & Integración",
+    "icon": "🔗",
+    "skills": [
+      { "name": "gRPC",            "level": "advanced",     "years": 2, "evidence": "-25% latencia, -50% recursos GCP en Envíame" },
+      { "name": "REST",            "level": "expert",       "years": 4, "evidence": "Todas las posiciones laborales" },
+      { "name": "GraphQL",         "level": "intermediate", "years": 2, "evidence": "Mencionado en GitHub stack y CV" },
+      { "name": "Celery",          "level": "advanced",     "years": 2, "evidence": "Legal Scraping — orquestación de tareas asíncronas" }
+    ]
+  },
+  {
+    "category": "Testing & Quality",
+    "icon": "🧪",
+    "skills": [
+      { "name": "pytest",          "level": "advanced",     "years": 3, "evidence": "Testing en Envíame y DEVOCAMP" },
+      { "name": "Jest",            "level": "intermediate", "years": 2, "evidence": "Mencionado en GitHub stack" },
+      { "name": "Selenium",        "level": "advanced",     "years": 2, "evidence": "Legal Scraping — extracción web" },
+      { "name": "SonarQube",       "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack y CV" }
+    ]
+  }
+]
