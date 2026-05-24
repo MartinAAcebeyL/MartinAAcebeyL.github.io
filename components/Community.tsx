@@ -2,6 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from '@/hooks/useTranslation';
 import type { SiteConfig } from '@/types';
 
 interface Props {
@@ -52,16 +53,17 @@ const typeColor: Record<string, string> = {
 export default function Community({ config }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
+  const { t } = useTranslation();
 
   return (
-    <section id="comunidad" ref={ref} className="py-24 px-6 bg-zinc-900/20">
+    <section id="community" ref={ref} className="py-24 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
         >
-          05. comunidad
+          05. {t.nav.community}
         </motion.p>
         <motion.h2
           className="section-title"
@@ -69,7 +71,7 @@ export default function Community({ config }: Props) {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.1 }}
         >
-          Impacto fuera del trabajo
+          {t.community.title}
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 gap-5">
@@ -85,15 +87,15 @@ export default function Community({ config }: Props) {
                 <span className="text-2xl">{item.icon}</span>
                 <div>
                   <div className="flex items-center gap-2 mb-0.5">
-                    <h3 className="text-sm font-semibold text-white">{item.title}</h3>
+                    <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">{item.title}</h3>
                     <span className={`text-[10px] font-mono border px-1.5 py-0.5 rounded ${typeColor[item.type]}`}>
                       {item.year}
                     </span>
                   </div>
-                  <p className="text-xs font-mono text-zinc-500">{item.role}</p>
+                  <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500">{item.role}</p>
                 </div>
               </div>
-              <p className="text-sm text-zinc-400">{item.desc}</p>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -106,13 +108,15 @@ export default function Community({ config }: Props) {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.5 }}
           >
-            <h3 className="text-sm font-mono text-zinc-500 uppercase tracking-widest mb-4">Certificaciones</h3>
+            <h3 className="text-sm font-mono text-zinc-500 dark:text-zinc-500 uppercase tracking-widest mb-4">
+              {t.language === 'es' ? 'Certificaciones' : 'Certifications'}
+            </h3>
             <div className="flex flex-wrap gap-2">
               {config.certifications.map((cert) => (
                 <div key={cert.name} className="tech-badge py-1.5 px-3">
                   {cert.url ? (
                     <a href={cert.url} target="_blank" rel="noopener noreferrer"
-                      className="hover:text-cyan-400 transition-colors">
+                      className="hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
                       {cert.name}{cert.issuer ? ` · ${cert.issuer}` : ''}{cert.year ? ` · ${cert.year}` : ''}
                     </a>
                   ) : (

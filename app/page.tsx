@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <main>
-      <Hero config={siteConfig} />
+      <Hero />
       <About config={siteConfig} />
       <Skills data={skills} />
       <Projects data={projects} />
