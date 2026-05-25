@@ -13,11 +13,11 @@ export default function Projects({ data }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
   const [expanded, setExpanded] = useState<string | null>(null);
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const typeLabel: Record<string, string> = {
-    professional: t.language === 'es' ? 'Profesional' : 'Professional',
-    personal: t.language === 'es' ? 'Personal' : 'Personal',
+    professional: language === 'es' ? 'Profesional' : 'Professional',
+    personal: language === 'es' ? 'Personal' : 'Personal',
   };
 
   return (
@@ -90,9 +90,9 @@ export default function Projects({ data }: Props) {
                     className="text-xs font-mono text-zinc-500 dark:text-zinc-500 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors flex items-center gap-1"
                   >
                     {isOpen ? (
-                      t.language === 'es' ? 'Ocultar detalles ↑' : 'Hide details ↑'
+                      language === 'es' ? 'Ocultar detalles ↑' : 'Hide details ↑'
                     ) : (
-                      t.language === 'es' ? 'Ver detalles ↓' : 'View details ↓'
+                      language === 'es' ? 'Ver detalles ↓' : 'View details ↓'
                     )}
                   </button>
                 </div>
@@ -109,19 +109,19 @@ export default function Projects({ data }: Props) {
                       <div className="p-6 grid md:grid-cols-2 gap-6">
                         <div>
                           <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 uppercase tracking-widest mb-2">
-                            {t.language === 'es' ? 'Problema' : 'Problem'}
+                            {language === 'es' ? 'Problema' : 'Problem'}
                           </p>
                           <p className="text-sm text-zinc-600 dark:text-zinc-400">{project.problem}</p>
                         </div>
                         <div>
                           <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 uppercase tracking-widest mb-2">
-                            {t.language === 'es' ? 'Solución' : 'Solution'}
+                            {language === 'es' ? 'Solución' : 'Solution'}
                           </p>
                           <p className="text-sm text-zinc-600 dark:text-zinc-400">{project.solution}</p>
                         </div>
                         <div className="md:col-span-2">
                           <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 uppercase tracking-widest mb-2">
-                            {t.language === 'es' ? 'Resultados' : 'Results'}
+                            {language === 'es' ? 'Resultados' : 'Results'}
                           </p>
                           <ul className="space-y-1">
                             {project.results.map((r, idx) => (

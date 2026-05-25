@@ -53,7 +53,7 @@ const typeColor: Record<string, string> = {
 export default function Community({ config }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   return (
     <section id="community" ref={ref} className="py-24 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
@@ -109,7 +109,7 @@ export default function Community({ config }: Props) {
             transition={{ delay: 0.5 }}
           >
             <h3 className="text-sm font-mono text-zinc-500 dark:text-zinc-500 uppercase tracking-widest mb-4">
-              {t.language === 'es' ? 'Certificaciones' : 'Certifications'}
+              {language === 'es' ? 'Certificaciones' : 'Certifications'}
             </h3>
             <div className="flex flex-wrap gap-2">
               {config.certifications.map((cert) => (

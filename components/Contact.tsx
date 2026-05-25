@@ -12,7 +12,7 @@ interface Props {
 export default function Contact({ config }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   return (
     <section id="contact" ref={ref} className="py-24 px-6">
@@ -44,7 +44,7 @@ export default function Contact({ config }: Props) {
           >
             <div className="text-3xl mb-4">✉️</div>
             <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-2 group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors">
-              {t.language === 'es' ? 'Email directo' : 'Direct email'}
+              {language === 'es' ? 'Email directo' : 'Direct email'}
             </h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
               {t.contact.subtitle}
@@ -67,13 +67,13 @@ export default function Contact({ config }: Props) {
               {t.contact.linkedin}
             </h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
-              {t.language === 'es' 
+              {language === 'es' 
                 ? 'Perfil completo, endorsements y recomendaciones de colegas y clientes.'
                 : 'Full profile, endorsements and recommendations from colleagues and clients.'
               }
             </p>
             <p className="text-sm font-mono text-cyan-500 dark:text-cyan-400">
-              {t.language === 'es' ? 'Ver perfil →' : 'View profile →'}
+              {language === 'es' ? 'Ver perfil →' : 'View profile →'}
             </p>
           </motion.a>
         </div>

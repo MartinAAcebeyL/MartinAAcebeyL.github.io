@@ -12,7 +12,7 @@ interface Props {
 export default function Experience({ data }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   return (
     <section id="experience" ref={ref} className="py-24 px-6">
@@ -79,7 +79,7 @@ export default function Experience({ data }: Props) {
                     )}
                     {entry.teamSize && (
                       <span className="text-xs font-mono text-zinc-600 dark:text-zinc-600 bg-zinc-200/60 dark:bg-zinc-800/60 px-2 py-0.5 rounded">
-                        {t.language === 'es' ? 'Equipo: ' : 'Team: '}{entry.teamSize}
+                        {language === 'es' ? 'Equipo: ' : 'Team: '}{entry.teamSize}
                       </span>
                     )}
                   </div>
