@@ -81,6 +81,74 @@ const siteConfig: SiteConfig = {
     { name: "PyDay La Paz 2024 – Charlas Python",           issuer: "PyDay", year: 2024, url: null },
     { name: "Curso profesional de base de datos",           issuer: null,    year: null, url: null },
   ],
+
+  // ─── Publicaciones y Presentaciones ──────────────────────────
+  publications: [
+    {
+      type: 'talk',
+      title: 'Arquitecturas RAG con ADK y LangChain',
+      event: 'PyConChile 2025',
+      date: '2025',
+      description: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
+      videoUrl: '#', // Placeholder - agregar URL real
+      slidesUrl: '#', // Placeholder - agregar URL real
+      thumbnail: '🎤',
+    },
+    {
+      type: 'talk',
+      title: 'Python para backends de alta disponibilidad',
+      event: 'PyDay La Paz 2024',
+      date: '2024',
+      description: 'Presentación sobre diseño de backends Python escalables y resilientes.',
+      videoUrl: '#', // Placeholder - agregar URL real
+      slidesUrl: '#', // Placeholder - agregar URL real
+      thumbnail: '🎤',
+    },
+    {
+      type: 'article',
+      title: 'Building Production-Ready RAG Systems',
+      platform: 'Medium',
+      date: '2025',
+      description: 'Technical deep-dive into RAG architecture patterns and best practices.',
+      url: '#', // Placeholder - agregar URL real de Medium
+      thumbnail: '📝',
+    },
+  ],
+
+  // ─── Comunidad y Logros ──────────────────────────────────────
+  community: [
+    {
+      type: 'competition',
+      title: 'ACM-ICPC LATAM',
+      role: 'Top 90 LATAM',
+      description: 'Competencia internacional de programación algorítmica. Top 90 de Latinoamérica, Top 50 Bolivia.',
+      year: '2023',
+      icon: '🏆',
+    },
+    {
+      type: 'award',
+      title: 'Mención de Honor',
+      role: 'UMSS',
+      description: 'Mención de honor académica en la Universidad Mayor de San Simón, Cochabamba.',
+      year: '2022',
+      icon: '⭐',
+    },
+  ],
+
+  // ─── Redes Sociales Stats (para sección Social) ──────────────
+  socialStats: {
+    github: {
+      repos: '50+',
+      stars: '100+',
+    },
+    leetcode: {
+      problems: '200+',
+      rating: 'Top 10%',
+    },
+    codeforces: {
+      rating: '1400+',
+    },
+  },
 };
 
 export default siteConfig;

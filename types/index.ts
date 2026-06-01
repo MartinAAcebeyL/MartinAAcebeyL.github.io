@@ -94,4 +94,37 @@ export interface SiteConfig {
     year: number | null;
     url: string | null;
   }>;
+  publications: Array<{
+    type: 'talk' | 'article' | 'whitepaper';
+    title: string;
+    event?: string;
+    platform?: string;
+    date: string;
+    description: string;
+    videoUrl?: string;
+    slidesUrl?: string;
+    url?: string;
+    thumbnail: string;
+  }>;
+  community: Array<{
+    type: 'competition' | 'award' | 'meetup';
+    title: string;
+    role: string;
+    description: string;
+    year: string;
+    icon: string;
+  }>;
+  socialStats: {
+    github: {
+      repos: string;
+      stars: string;
+    };
+    leetcode: {
+      problems: string;
+      rating: string;
+    };
+    codeforces: {
+      rating: string;
+    };
+  };
 }

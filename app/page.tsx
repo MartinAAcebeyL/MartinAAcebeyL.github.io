@@ -4,7 +4,8 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Experience from '@/components/Experience';
-import Community from '@/components/Community';
+import Publications from '@/components/Publications';
+import Social from '@/components/Social';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -16,7 +17,8 @@ export default function Home() {
       <Skills data={skills} />
       <Projects data={projects} />
       <Experience data={experience} />
-      <Community config={siteConfig} />
+      <Publications config={siteConfig} />
+      <Social config={siteConfig} />
       <Contact config={siteConfig} />
       <Footer config={siteConfig} />
     </main>

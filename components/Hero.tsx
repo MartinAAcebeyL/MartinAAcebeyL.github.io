@@ -14,10 +14,23 @@ const fadeUp = {
 };
 
 export default function Hero() {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
+
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 px-6">
+      {/* Maintenance Banner */}
+      <div className="bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-950/10 dark:to-blue-950/10 border-b border-cyan-200/50 dark:border-cyan-800/50 py-3 px-6">
+        <div className="max-w-5xl mx-auto flex items-center justify-center gap-2">
+          <span className="text-cyan-500 dark:text-cyan-400 text-sm">🚧</span>
+          <p className="text-xs text-zinc-600 dark:text-zinc-400 font-mono">
+            {language === 'es'
+              ? 'Este portafolio está en constante evolución y mejora'
+              : 'This portfolio is constantly evolving and improving'
+            }
+          </p>
+        </div>
+      </div>
       <div className="max-w-5xl mx-auto w-full py-24">
 
         {/* Availability badge */}

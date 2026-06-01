@@ -60,11 +60,24 @@ export const translations = {
     },
     // Community
     community: {
-      title: 'Community & Speaking',
-      subtitle: 'I organize and speak at tech events',
+      title: 'Publications & Community',
+      subtitle: 'Talks, articles, and community engagement',
       talks: 'Talks & Events',
       viewSlides: 'View Slides',
       viewRecording: 'View Recording',
+      publications: 'Publications',
+      viewArticle: 'Read Article',
+      viewVideo: 'Watch Video',
+    },
+    // Social
+    social: {
+      title: 'Connect with Me',
+      subtitle: 'Find me on these platforms',
+      followers: 'followers',
+      repos: 'repositories',
+      stars: 'stars',
+      rating: 'rating',
+      problems: 'problems solved',
     },
     // Contact
     contact: {
@@ -142,11 +155,24 @@ export const translations = {
     },
     // Comunidad
     community: {
-      title: 'Comunidad y Charlas',
-      subtitle: 'Organizo y participo en eventos técnicos',
+      title: 'Presentaciones y Comunidad',
+      subtitle: 'Charlas, artículos y participación en la comunidad',
       talks: 'Charlas & Eventos',
       viewSlides: 'Ver Slides',
       viewRecording: 'Ver Grabación',
+      publications: 'Publicaciones',
+      viewArticle: 'Leer Artículo',
+      viewVideo: 'Ver Video',
+    },
+    // Social
+    social: {
+      title: 'Conéctate Conmigo',
+      subtitle: 'Encuéntrame en estas plataformas',
+      followers: 'seguidores',
+      repos: 'repositorios',
+      stars: 'estrellas',
+      rating: 'rating',
+      problems: 'problemas resueltos',
     },
     // Contacto
     contact: {

@@ -22,7 +22,7 @@ export default function Contact({ config }: Props) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
         >
-          06. {t.nav.contact}
+          07. {t.nav.contact}
         </motion.p>
         <motion.h2
           className="section-title"
@@ -33,7 +33,7 @@ export default function Contact({ config }: Props) {
           {t.contact.title}
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {/* Email CTA */}
           <motion.a
             href={`mailto:${config.contact.email}`}
@@ -76,14 +76,36 @@ export default function Contact({ config }: Props) {
               {language === 'es' ? 'Ver perfil →' : 'View profile →'}
             </p>
           </motion.a>
+
+          {/* Quick Response Guarantee */}
+          <motion.div
+            className="card p-8 bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-cyan-950/20 dark:to-blue-950/20 border-cyan-500/20 dark:border-cyan-400/20"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4 }}
+          >
+            <div className="text-3xl mb-4">⚡</div>
+            <h3 className="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+              {language === 'es' ? 'Respuesta rápida' : 'Quick Response'}
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+              {language === 'es' 
+                ? 'Respondo en 24-48 horas a propuestas y consultas serias.'
+                : 'I respond within 24-48 hours to serious proposals and inquiries.'
+              }
+            </p>
+            <p className="text-xs font-mono text-cyan-600 dark:text-cyan-500">
+              {language === 'es' ? 'Comprometido con la comunicación' : 'Committed to communication'}
+            </p>
+          </motion.div>
         </div>
 
         {/* Extra links */}
         <motion.div
-          className="mt-8 flex flex-wrap gap-4"
+          className="mt-8 flex flex-wrap gap-4 justify-center"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.45 }}
+          transition={{ delay: 0.55 }}
         >
           <a href={config.contact.github} target="_blank" rel="noopener noreferrer"
             className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">

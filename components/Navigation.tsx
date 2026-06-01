@@ -10,7 +10,8 @@ const navItems = [
   { href: '#skills', key: 'skills' as const },
   { href: '#projects', key: 'projects' as const },
   { href: '#experience', key: 'experience' as const },
-  { href: '#community', key: 'community' as const },
+  { href: '#publications', key: 'community' as const },
+  { href: '#social', label: 'Social' },
   { href: '#contact', key: 'contact' as const },
 ];
 
@@ -49,7 +50,7 @@ export default function Navigation() {
               href={item.href}
               className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200"
             >
-              {t.nav[item.key]}
+              {'label' in item ? item.label : t.nav[item.key]}
             </a>
           ))}
         </nav>
@@ -94,7 +95,7 @@ export default function Navigation() {
                   onClick={() => setOpen(false)}
                   className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
                 >
-                  {t.nav[item.key]}
+                  {'label' in item ? item.label : t.nav[item.key]}
                 </a>
               ))}
               <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800">
