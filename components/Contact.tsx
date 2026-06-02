@@ -119,7 +119,8 @@ export default function Contact({ config }: Props) {
             className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
             Codeforces ↗
           </a>
-          <a href={config.contact.cvUrl}
+          <a href={language === 'es' ? '/Martin-Acebey-CV-ES.pdf' : '/Martin-Acebey-CV-EN.pdf'}
+            download
             className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
             {t.nav.downloadCV} ↗
           </a>

@@ -109,12 +109,6 @@ export default function Hero() {
           >
             {t.contact.title}
           </a>
-          <a
-            href={siteConfig.contact.cvUrl}
-            className="px-6 py-3 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 font-semibold rounded-lg hover:text-zinc-900 dark:hover:text-white hover:border-zinc-300 dark:hover:border-zinc-600 transition-colors text-sm"
-          >
-            {t.hero.downloadCV}
-          </a>
         </motion.div>
 
         {/* Metric cards */}

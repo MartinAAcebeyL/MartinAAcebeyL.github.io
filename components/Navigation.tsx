@@ -18,7 +18,7 @@ const navItems = [
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -58,7 +58,8 @@ export default function Navigation() {
         <div className="hidden md:flex items-center gap-4">
           <LanguageThemeSwitcher />
           <a
-            href="/cv-martin-acebey.pdf"
+            href={language === 'es' ? '/Martin-Acebey-CV-ES.pdf' : '/Martin-Acebey-CV-EN.pdf'}
+            download
             className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-500 dark:text-cyan-400 border border-cyan-500/30 dark:border-cyan-400/30 hover:border-cyan-500 dark:hover:border-cyan-400 hover:bg-cyan-500/10 dark:hover:bg-cyan-400/10 px-3 py-1.5 rounded-md transition-all duration-200"
           >
             {t.nav.downloadCV}

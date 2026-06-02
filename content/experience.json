@@ -10,12 +10,13 @@
     "industry": "Logistics / eCommerce",
     "teamSize": null,
     "achievements": [
-      "Implementé arquitecturas RAG con ADK y LangChain mejorando la precisión de respuestas en sistemas internos en 70%.",
-      "Construí agentes autónomos con ADK para automatizar operaciones internas que requerían intervención manual diaria.",
-      "Optimicé la comunicación entre microservicios migrando de REST a gRPC, reduciendo latencia de red en 25% y uso de recursos en GCP en 50%.",
-      "Estandaricé flujos CI/CD con Docker y Bitbucket Pipelines, logrando una reducción del 50% en errores de producción.",
-      "Integré Amazon Selling Partner API y Mercado Libre API para sincronización automatizada de órdenes.",
-      "Mentoré a 3 junior developers en Python best practices, code reviews y system design."
+      "Desarrollé y mantuve microservicios críticos manejando integraciones con APIs de terceros incluyendo Amazon Selling Partner API y Mercado Libre API para sincronización automatizada de órdenes.",
+      "Lideré adopción de tecnologías AI (arquitecturas RAG con ADK y LangChain) mejorando la precisión de respuestas en sistemas internos en 70%.",
+      "Construí agentes autónomos de IA usando la estrategia RAG con ADK (Agent Development Kit) para automatizar operaciones internas que requerían intervención manual diaria.",
+      "Optimicé comunicación entre microservicios implementando gRPC, reduciendo latencia de red en 25% e incrementando utilización de recursos en GCP en 50%.",
+      "Mentoré a 3 junior developers en Python best practices, code reviews y system design, acelerando su progresión profesional.",
+      "Implementé pipelines de CI/CD con Docker y Bitbucket Pipelines, reduciendo errores de producción en 50%.",
+      "Condujo pruebas extensivas y automatización para garantizar escalabilidad y estabilidad del sistema."
     ],
     "techStack": ["Python", "LangChain", "ADK", "RAG", "gRPC", "GCP", "Docker", "CI/CD", "Bitbucket Pipelines", "MCP"]
   },

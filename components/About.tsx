@@ -2,6 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslation } from '@/hooks/useTranslation';
 import { siteConfig } from '@/lib/data';
 import type { SiteConfig } from '@/types';
@@ -13,7 +14,7 @@ interface Props {
 export default function About({ config }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-100px' });
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
 
   const paragraphs = [
     t.about.journey,
@@ -88,9 +89,14 @@ export default function About({ config }: Props) {
             {/* Profile Photo & CV Download */}
             <div className="card p-6 flex flex-col items-center gap-4">
               <div className="relative w-40 h-40 rounded-full overflow-hidden bg-gradient-to-br from-cyan-400 to-blue-500 p-1">
-                <div className="w-full h-full rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center">
-                  <span className="text-6xl">👨‍💻</span>
-                </div>
+                <Image
+                  src="/me.png"
+                  alt={config.fullName}
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover rounded-full"
+                  priority
+                />
               </div>
               
               <div className="text-center">
@@ -99,7 +105,7 @@ export default function About({ config }: Props) {
               </div>
 
               <a
-                href={config.contact.cvUrl}
+                href={language === 'es' ? '/Martin-Acebey-CV-ES.pdf' : '/Martin-Acebey-CV-EN.pdf'}
                 download
                 className="w-full bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-500 text-white px-4 py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
               >
