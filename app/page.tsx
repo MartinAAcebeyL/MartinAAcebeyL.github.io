@@ -14,9 +14,9 @@ export default function Home() {
     <main>
       <Hero />
       <About config={siteConfig} />
+      <Experience data={experience} />
       <Skills data={skills} />
       <Projects data={projects} />
-      <Experience data={experience} />
       <Publications config={siteConfig} />
       <Social config={siteConfig} />
       <Contact config={siteConfig} />

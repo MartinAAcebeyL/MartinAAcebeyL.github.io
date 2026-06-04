@@ -7,9 +7,9 @@ import LanguageThemeSwitcher from './LanguageThemeSwitcher';
 
 const navItems = [
   { href: '#about', key: 'about' as const },
+  { href: '#experience', key: 'experience' as const },
   { href: '#skills', key: 'skills' as const },
   { href: '#projects', key: 'projects' as const },
-  { href: '#experience', key: 'experience' as const },
   { href: '#publications', key: 'community' as const },
   { href: '#social', label: 'Social' },
   { href: '#contact', key: 'contact' as const },
@@ -48,7 +48,7 @@ export default function Navigation() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200"
+              className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200 px-2 py-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900/50"
             >
               {'label' in item ? item.label : t.nav[item.key]}
             </a>
@@ -60,7 +60,7 @@ export default function Navigation() {
           <a
             href={language === 'es' ? '/Martin-Acebey-CV-ES.pdf' : '/Martin-Acebey-CV-EN.pdf'}
             download
-            className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-500 dark:text-cyan-400 border border-cyan-500/30 dark:border-cyan-400/30 hover:border-cyan-500 dark:hover:border-cyan-400 hover:bg-cyan-500/10 dark:hover:bg-cyan-400/10 px-3 py-1.5 rounded-md transition-all duration-200"
+            className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-500 dark:text-cyan-400 border border-cyan-500/30 dark:border-cyan-400/30 px-3 py-2 rounded-lg transition-[border-color,background-color,box-shadow] duration-200 active:scale-[0.96] hover:border-cyan-500 dark:hover:border-cyan-400 hover:bg-cyan-500/10 dark:hover:bg-cyan-400/10 hover:shadow-md dark:hover:shadow-cyan-500/10 min-h-[40px] flex items-center justify-center"
           >
             {t.nav.downloadCV}
           </a>

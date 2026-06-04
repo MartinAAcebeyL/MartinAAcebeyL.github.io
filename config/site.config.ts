@@ -90,8 +90,6 @@ const siteConfig: SiteConfig = {
       event: 'PyConChile 2025',
       date: '2025',
       description: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
-      videoUrl: '#', // Placeholder - agregar URL real
-      slidesUrl: '#', // Placeholder - agregar URL real
       thumbnail: '🎤',
     },
     {
@@ -100,17 +98,33 @@ const siteConfig: SiteConfig = {
       event: 'PyDay La Paz 2024',
       date: '2024',
       description: 'Presentación sobre diseño de backends Python escalables y resilientes.',
-      videoUrl: '#', // Placeholder - agregar URL real
-      slidesUrl: '#', // Placeholder - agregar URL real
       thumbnail: '🎤',
     },
     {
       type: 'article',
-      title: 'Building Production-Ready RAG Systems',
+      title: 'REST vs gRPC: Duel of Two Architectures',
       platform: 'Medium',
-      date: '2025',
-      description: 'Technical deep-dive into RAG architecture patterns and best practices.',
-      url: '#', // Placeholder - agregar URL real de Medium
+      date: '2024',
+      description: 'Comparativa técnica entre arquitecturas REST y gRPC con casos de uso reales.',
+      url: 'https://medium.com/enviame-engineering/rest-vs-grpc-duel-of-two-architectures-2f08b2b269a0',
+      thumbnail: '📝',
+    },
+    {
+      type: 'article',
+      title: 'Voice as an Interface: Improving Rate Quoting with AI',
+      platform: 'Medium',
+      date: '2024',
+      description: 'Cómo implementar interfaces de voz con IA para mejorar la experiencia de usuario.',
+      url: 'https://medium.com/enviame-engineering/voice-as-an-interface-improving-the-rate-quoting-experience-with-ai-12ec657c8847',
+      thumbnail: '📝',
+    },
+    {
+      type: 'article',
+      title: 'Cosas que le diría a mi yo del pasado',
+      platform: 'Medium',
+      date: '2024',
+      description: 'Reflexiones sobre la carrera en programación: lecciones aprendidas y consejos para principiantes.',
+      url: 'https://medium.com/@martinaacbyl2000/cosas-que-le-diría-a-mi-yo-del-pasado-cuando-empecé-esta-aventura-de-la-programación-e6387fe865ae',
       thumbnail: '📝',
     },
   ],

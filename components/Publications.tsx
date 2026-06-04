@@ -58,39 +58,37 @@ export default function Publications({ config }: Props) {
               {config.publications.map((pub, i) => (
                 <motion.div
                   key={pub.title}
-                  className="card p-5 hover:border-cyan-500/40 dark:hover:border-cyan-400/40 transition-all"
+                  className="card p-6 hover:border-transparent transition-[border-color,box-shadow,transform] duration-300 cursor-pointer group"
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.25 + i * 0.08, duration: 0.4 }}
                 >
-                  <div className="flex items-start gap-3 mb-3">
-                    <span className="text-3xl">{pub.thumbnail}</span>
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">
-                          {pub.title}
-                        </h4>
-                      </div>
-                      <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 mb-1">
+                  <div className="flex items-start gap-3 mb-4">
+                    <span className="text-4xl flex-shrink-0">{pub.thumbnail}</span>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-semibold text-zinc-900 dark:text-white mb-1.5 line-clamp-2">
+                        {pub.title}
+                      </h4>
+                      <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400 mb-2">
                         {pub.event || pub.platform} · {pub.date}
                       </p>
-                      <span className={`inline-block text-[10px] font-mono border px-1.5 py-0.5 rounded ${typeColor[pub.type]}`}>
+                      <span className={`inline-block text-[10px] font-mono border px-2 py-1 rounded-md transition-colors duration-200 ${typeColor[pub.type]}`}>
                         {pub.type}
                       </span>
                     </div>
                   </div>
                   
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 line-clamp-2 leading-relaxed">
                     {pub.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 pt-3 border-t border-zinc-200 dark:border-zinc-800/50">
                     {pub.videoUrl && pub.videoUrl !== '#' && (
                       <a
                         href={pub.videoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-mono text-cyan-500 dark:text-cyan-400 hover:underline"
+                        className="text-xs font-mono text-cyan-500 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-150 hover:underline min-h-[32px] flex items-center"
                       >
                         {t.community.viewRecording} ↗
                       </a>
@@ -100,7 +98,7 @@ export default function Publications({ config }: Props) {
                         href={pub.slidesUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-mono text-cyan-500 dark:text-cyan-400 hover:underline"
+                        className="text-xs font-mono text-cyan-500 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-150 hover:underline min-h-[32px] flex items-center"
                       >
                         {t.community.viewSlides} ↗
                       </a>
@@ -110,7 +108,7 @@ export default function Publications({ config }: Props) {
                         href={pub.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-mono text-cyan-500 dark:text-cyan-400 hover:underline"
+                        className="text-xs font-mono text-cyan-500 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-150 hover:underline min-h-[32px] flex items-center"
                       >
                         {t.community.viewArticle} ↗
                       </a>

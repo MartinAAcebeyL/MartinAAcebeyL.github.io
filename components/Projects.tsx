@@ -55,7 +55,7 @@ export default function Projects({ data }: Props) {
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <span className={`text-xs font-mono px-2 py-0.5 rounded ${
+                        <span className={`text-xs font-mono px-2 py-1 rounded-lg transition-colors duration-200 ${
                           project.type === 'professional'
                             ? 'bg-cyan-500/10 dark:bg-cyan-400/10 text-cyan-500 dark:text-cyan-400 border border-cyan-500/20 dark:border-cyan-400/20'
                             : 'bg-violet-500/10 dark:bg-violet-400/10 text-violet-500 dark:text-violet-400 border border-violet-500/20 dark:border-violet-400/20'
@@ -68,8 +68,8 @@ export default function Projects({ data }: Props) {
                       </div>
                       <h3 className="text-base font-semibold text-zinc-900 dark:text-white">{project.title}</h3>
                     </div>
-                    {project.repoPublic && (
-                      <span className="text-xs font-mono text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 dark:border-emerald-400/20 bg-emerald-500/10 dark:bg-emerald-400/10 px-2 py-0.5 rounded shrink-0">
+                        {project.repoPublic && (
+                      <span className="text-xs font-mono text-emerald-500 dark:text-emerald-400 border border-emerald-500/20 dark:border-emerald-400/20 bg-emerald-500/10 dark:bg-emerald-400/10 px-2 py-1 rounded-lg shrink-0 transition-colors duration-200">
                         Open source
                       </span>
                     )}
@@ -87,7 +87,7 @@ export default function Projects({ data }: Props) {
                   {/* Expand button */}
                   <button
                     onClick={() => setExpanded(isOpen ? null : project.id)}
-                    className="text-xs font-mono text-zinc-500 dark:text-zinc-500 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors flex items-center gap-1"
+                    className="text-xs font-mono text-zinc-500 dark:text-zinc-500 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors duration-200 flex items-center gap-1 px-2 py-1.5 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900/50 active:scale-[0.96] min-h-[32px]"
                   >
                     {isOpen ? (
                       language === 'es' ? 'Ocultar detalles ↑' : 'Hide details ↑'
