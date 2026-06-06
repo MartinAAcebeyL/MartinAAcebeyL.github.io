@@ -101,6 +101,7 @@ export interface SiteConfig {
     platform?: string;
     date: string;
     description: string;
+    descriptionKey: 'ragAdk' | 'highAvailability' | 'restVsGrpc' | 'voiceInterface' | 'pastSelf';
     videoUrl?: string;
     slidesUrl?: string;
     url?: string;

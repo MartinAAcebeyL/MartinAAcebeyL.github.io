@@ -21,7 +21,7 @@ export default function Projects({ data }: Props) {
   };
 
   return (
-    <section id="projects" ref={ref} className="py-24 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
+    <section id="projects" ref={ref} className="py-14 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"

@@ -28,7 +28,7 @@ export default function Skills({ data }: Props) {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" ref={ref} className="py-24 px-6">
+    <section id="skills" ref={ref} className="py-14 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"

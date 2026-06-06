@@ -15,7 +15,7 @@ export default function Contact({ config }: Props) {
   const { t, language } = useTranslation();
 
   return (
-    <section id="contact" ref={ref} className="py-24 px-6">
+    <section id="contact" ref={ref} className="py-14 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"

@@ -52,7 +52,7 @@ const siteConfig: SiteConfig = {
 
   // ─── Métricas destacadas (Hero / About) ──────────────────────
   metrics: [
-    { value: "4+",    label: "Años de experiencia",    sub: "Backend & AI" },
+    { value: "4+",    label: "Años de experiencia",    sub: "Backend & AI engineer" },
     { value: "70%",   label: "Mejora en precisión IA", sub: "RAG · Envíame" },
     { value: "99.5%", label: "Uptime garantizado",     sub: "+10k req/día" },
   ],
@@ -90,6 +90,7 @@ const siteConfig: SiteConfig = {
       event: 'PyConChile 2025',
       date: '2025',
       description: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
+      descriptionKey: 'ragAdk',
       thumbnail: '🎤',
     },
     {
@@ -98,6 +99,7 @@ const siteConfig: SiteConfig = {
       event: 'PyDay La Paz 2024',
       date: '2024',
       description: 'Presentación sobre diseño de backends Python escalables y resilientes.',
+      descriptionKey: 'highAvailability',
       thumbnail: '🎤',
     },
     {
@@ -106,6 +108,7 @@ const siteConfig: SiteConfig = {
       platform: 'Medium',
       date: '2024',
       description: 'Comparativa técnica entre arquitecturas REST y gRPC con casos de uso reales.',
+      descriptionKey: 'restVsGrpc',
       url: 'https://medium.com/enviame-engineering/rest-vs-grpc-duel-of-two-architectures-2f08b2b269a0',
       thumbnail: '📝',
     },
@@ -115,6 +118,7 @@ const siteConfig: SiteConfig = {
       platform: 'Medium',
       date: '2024',
       description: 'Cómo implementar interfaces de voz con IA para mejorar la experiencia de usuario.',
+      descriptionKey: 'voiceInterface',
       url: 'https://medium.com/enviame-engineering/voice-as-an-interface-improving-the-rate-quoting-experience-with-ai-12ec657c8847',
       thumbnail: '📝',
     },
@@ -124,6 +128,7 @@ const siteConfig: SiteConfig = {
       platform: 'Medium',
       date: '2024',
       description: 'Reflexiones sobre la carrera en programación: lecciones aprendidas y consejos para principiantes.',
+      descriptionKey: 'pastSelf',
       url: 'https://medium.com/@martinaacbyl2000/cosas-que-le-diría-a-mi-yo-del-pasado-cuando-empecé-esta-aventura-de-la-programación-e6387fe865ae',
       thumbnail: '📝',
     },

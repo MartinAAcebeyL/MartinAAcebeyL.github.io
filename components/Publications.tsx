@@ -9,6 +9,13 @@ interface Props {
   config: SiteConfig;
 }
 
+const communityItemsBase = [
+  { type: 'talk',        icon: '🎤', title: 'PyConChile 2025',  key: 'pyconchile', year: '2025' },
+  { type: 'talk',        icon: '🎤', title: 'PyDay La Paz 2024', key: 'pyday',      year: '2024' },
+  { type: 'competition', icon: '🏆', title: 'ACM-ICPC LATAM',    key: 'acmicpc',    year: '2023' },
+  { type: 'award',       icon: '⭐', title: 'Mención de Honor',  key: 'mention',    year: '2022' },
+] as const;
+
 const typeColor: Record<string, string> = {
   talk: 'text-cyan-400 bg-cyan-400/10 border-cyan-400/20',
   article: 'text-purple-400 bg-purple-400/10 border-purple-400/20',
@@ -21,10 +28,10 @@ const typeColor: Record<string, string> = {
 export default function Publications({ config }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
-  const { t, language } = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    <section id="publications" ref={ref} className="py-24 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
+    <section id="publications" ref={ref} className="py-14 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"
@@ -79,7 +86,7 @@ export default function Publications({ config }: Props) {
                   </div>
                   
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 line-clamp-2 leading-relaxed">
-                    {pub.description}
+                    {t.publicationDescriptions[pub.descriptionKey]}
                   </p>
 
                   <div className="flex flex-wrap gap-2 pt-3 border-t border-zinc-200 dark:border-zinc-800/50">
@@ -129,33 +136,36 @@ export default function Publications({ config }: Props) {
               animate={inView ? { opacity: 1 } : {}}
               transition={{ delay: 0.4 }}
             >
-              {language === 'es' ? 'Participación Comunitaria' : 'Community Participation'}
+              {t.communityLabels.communityParticipation}
             </motion.h3>
             
             <div className="grid sm:grid-cols-2 gap-5">
-              {config.community.map((item, i) => (
-                <motion.div
-                  key={item.title}
-                  className="card p-5"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ delay: 0.45 + i * 0.08, duration: 0.4 }}
-                >
-                  <div className="flex items-start gap-3 mb-3">
-                    <span className="text-2xl">{item.icon}</span>
-                    <div>
-                      <div className="flex items-center gap-2 mb-0.5">
-                        <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">{item.title}</h4>
-                        <span className={`text-[10px] font-mono border px-1.5 py-0.5 rounded ${typeColor[item.type]}`}>
-                          {item.year}
-                        </span>
+              {communityItemsBase.map((item, i) => {
+                const translated = t.communityItems[item.key];
+                return (
+                  <motion.div
+                    key={item.title}
+                    className="card p-5"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ delay: 0.45 + i * 0.08, duration: 0.4 }}
+                  >
+                    <div className="flex items-start gap-3 mb-3">
+                      <span className="text-2xl">{item.icon}</span>
+                      <div>
+                        <div className="flex items-center gap-2 mb-0.5">
+                          <h4 className="text-sm font-semibold text-zinc-900 dark:text-white">{item.title}</h4>
+                          <span className={`text-[10px] font-mono border px-1.5 py-0.5 rounded ${typeColor[item.type]}`}>
+                            {item.year}
+                          </span>
+                        </div>
+                        <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500">{translated.role}</p>
                       </div>
-                      <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500">{item.role}</p>
                     </div>
-                  </div>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400">{item.description}</p>
-                </motion.div>
-              ))}
+                    <p className="text-sm text-zinc-600 dark:text-zinc-400">{translated.desc}</p>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         )}

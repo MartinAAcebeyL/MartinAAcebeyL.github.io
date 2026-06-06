@@ -9,40 +9,12 @@ interface Props {
   config: SiteConfig;
 }
 
-const communityItems = [
-  {
-    type: 'talk',
-    icon: '🎤',
-    title: 'PyConChile 2025',
-    role: 'Speaker',
-    desc: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
-    year: '2025',
-  },
-  {
-    type: 'talk',
-    icon: '🎤',
-    title: 'PyDay La Paz 2024',
-    role: 'Speaker',
-    desc: 'Presentación sobre Python para backends de alta disponibilidad.',
-    year: '2024',
-  },
-  {
-    type: 'competition',
-    icon: '🏆',
-    title: 'ACM-ICPC LATAM',
-    role: 'Top 90 LATAM',
-    desc: 'Competencia internacional de programación algorítmica. Top 90 de Latinoamérica, Top 50 Bolivia.',
-    year: '2023',
-  },
-  {
-    type: 'award',
-    icon: '⭐',
-    title: 'Mención de Honor',
-    role: 'UMSS',
-    desc: 'Mención de honor académica en la Universidad Mayor de San Simón, Cochabamba.',
-    year: '2022',
-  },
-];
+const communityItemsBase = [
+  { type: 'talk',        icon: '🎤', title: 'PyConChile 2025',  key: 'pyconchile', year: '2025' },
+  { type: 'talk',        icon: '🎤', title: 'PyDay La Paz 2024', key: 'pyday',      year: '2024' },
+  { type: 'competition', icon: '🏆', title: 'ACM-ICPC LATAM',    key: 'acmicpc',    year: '2023' },
+  { type: 'award',       icon: '⭐', title: 'Mención de Honor',  key: 'mention',    year: '2022' },
+] as const;
 
 const typeColor: Record<string, string> = {
   talk: 'text-cyan-400 bg-cyan-400/10 border-cyan-400/20',
@@ -53,10 +25,10 @@ const typeColor: Record<string, string> = {
 export default function Community({ config }: Props) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
-  const { t, language } = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    <section id="community" ref={ref} className="py-24 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
+    <section id="community" ref={ref} className="py-14 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"
@@ -75,29 +47,32 @@ export default function Community({ config }: Props) {
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 gap-5">
-          {communityItems.map((item, i) => (
-            <motion.div
-              key={item.title}
-              className="card p-5"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.15 + i * 0.08, duration: 0.4 }}
-            >
-              <div className="flex items-start gap-3 mb-3">
-                <span className="text-2xl">{item.icon}</span>
-                <div>
-                  <div className="flex items-center gap-2 mb-0.5">
-                    <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">{item.title}</h3>
-                    <span className={`text-[10px] font-mono border px-1.5 py-0.5 rounded ${typeColor[item.type]}`}>
-                      {item.year}
-                    </span>
+          {communityItemsBase.map((item, i) => {
+            const translated = t.communityItems[item.key];
+            return (
+              <motion.div
+                key={item.title}
+                className="card p-5"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.15 + i * 0.08, duration: 0.4 }}
+              >
+                <div className="flex items-start gap-3 mb-3">
+                  <span className="text-2xl">{item.icon}</span>
+                  <div>
+                    <div className="flex items-center gap-2 mb-0.5">
+                      <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">{item.title}</h3>
+                      <span className={`text-[10px] font-mono border px-1.5 py-0.5 rounded ${typeColor[item.type]}`}>
+                        {item.year}
+                      </span>
+                    </div>
+                    <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500">{translated.role}</p>
                   </div>
-                  <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500">{item.role}</p>
                 </div>
-              </div>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">{item.desc}</p>
-            </motion.div>
-          ))}
+                <p className="text-sm text-zinc-600 dark:text-zinc-400">{translated.desc}</p>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* Certifications */}
@@ -109,7 +84,7 @@ export default function Community({ config }: Props) {
             transition={{ delay: 0.5 }}
           >
             <h3 className="text-sm font-mono text-zinc-500 dark:text-zinc-500 uppercase tracking-widest mb-4">
-              {language === 'es' ? 'Certificaciones' : 'Certifications'}
+              {t.communityLabels.certifications}
             </h3>
             <div className="flex flex-wrap gap-2">
               {config.certifications.map((cert) => (

@@ -23,7 +23,7 @@ export default function About({ config }: Props) {
   ];
 
   return (
-    <section id="about" ref={ref} className="py-24 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
+    <section id="about" ref={ref} className="py-14 px-6 bg-zinc-100/50 dark:bg-zinc-900/20">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"
@@ -65,13 +65,13 @@ export default function About({ config }: Props) {
                 animate={inView ? { opacity: 1 } : {}}
                 transition={{ delay: 0.5 }}
               >
-                <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 mb-2 uppercase tracking-widest">Educación</p>
+                <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 mb-2 uppercase tracking-widest">{t.education.label}</p>
                 {config.education.map((edu) => (
                   <div key={edu.degree}>
-                    <p className="text-sm text-zinc-900 dark:text-white font-medium">{edu.degree}</p>
+                    <p className="text-sm text-zinc-900 dark:text-white font-medium">{t.education.degree}</p>
                     <p className="text-xs text-zinc-500 dark:text-zinc-500 font-mono">
                       {edu.institution} · {edu.period}
-                      {edu.distinction ? ` · ${edu.distinction}` : ''}
+                      {edu.distinction ? ` · ${t.education.distinction}` : ''}
                     </p>
                   </div>
                 ))}
@@ -115,9 +115,7 @@ export default function About({ config }: Props) {
                 {t.nav.downloadCV}
               </a>
               
-              <p className="text-[10px] text-zinc-400 dark:text-zinc-600 font-mono">
-                {t.hero.availability}
-              </p>
+              
             </div>
 
             {/* Metrics */}
@@ -128,7 +126,7 @@ export default function About({ config }: Props) {
                 <p className="text-zinc-500 dark:text-zinc-500 text-xs font-mono">{t.about.metrics.years.sublabel}</p>
               </div>
             </div>
-            <div className="card p-5 flex items-center gap-4">
+            {/* <div className="card p-5 flex items-center gap-4">
               <span className="text-3xl font-bold text-cyan-500 dark:text-cyan-400 tabular-nums min-w-[72px]">{t.about.metrics.accuracy.value}</span>
               <div>
                 <p className="text-zinc-900 dark:text-white text-sm font-medium">{t.about.metrics.accuracy.label}</p>
@@ -141,19 +139,7 @@ export default function About({ config }: Props) {
                 <p className="text-zinc-900 dark:text-white text-sm font-medium">{t.about.metrics.uptime.label}</p>
                 <p className="text-zinc-500 dark:text-zinc-500 text-xs font-mono">{t.about.metrics.uptime.sublabel}</p>
               </div>
-            </div>
-
-            <a
-              href={config.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card p-5 hover:border-cyan-500/40 dark:hover:border-cyan-400/40 transition-colors group"
-            >
-              <p className="text-xs font-mono text-zinc-500 dark:text-zinc-500 mb-1">{t.contact.github}</p>
-              <p className="text-sm text-zinc-900 dark:text-white group-hover:text-cyan-500 dark:group-hover:text-cyan-400 transition-colors">
-                @{config.contact.githubUsername} ↗
-              </p>
-            </a>
+            </div> */}
           </motion.div>
         </div>
       </div>

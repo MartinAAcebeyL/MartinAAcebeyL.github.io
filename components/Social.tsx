@@ -61,7 +61,7 @@ export default function Social({ config }: Props) {
   ];
 
   return (
-    <section id="social" ref={ref} className="py-24 px-6">
+    <section id="social" ref={ref} className="py-14 px-6">
       <div className="max-w-5xl mx-auto">
         <motion.p
           className="section-label"

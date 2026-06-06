@@ -18,7 +18,7 @@ export default function Hero() {
 
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 px-6">
+    <section id="home" className="flex flex-col justify-center pt-16 px-6">
       {/* Maintenance Banner */}
       <div className="bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-950/10 dark:to-blue-950/10 border-b border-cyan-200/50 dark:border-cyan-800/50 py-3 px-6">
         <div className="max-w-5xl mx-auto flex items-center justify-center gap-2">
@@ -31,20 +31,7 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="max-w-5xl mx-auto w-full py-24">
-
-        {/* Availability badge */}
-        <motion.div
-          custom={0}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          className="inline-flex items-center gap-2 text-xs font-mono text-emerald-500 dark:text-emerald-400 bg-emerald-500/10 dark:bg-emerald-400/10 border border-emerald-500/20 dark:border-emerald-400/20 px-3 py-1.5 rounded-full mb-8"
-        >
-          <span className="w-1.5 h-1.5 bg-emerald-500 dark:bg-emerald-400 rounded-full animate-pulse" />
-          {t.hero.availability}
-        </motion.div>
-
+      <div className="max-w-5xl mx-auto w-full py-12">
         {/* Name */}
         <motion.h1
           custom={0.1}

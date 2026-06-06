@@ -17,7 +17,7 @@ export const translations = {
       greeting: 'Hi, I\'m',
       role: 'Backend & AI Engineer',
       subtitle: 'Building high-availability Python microservices and integrating AI that generates measurable impact',
-      description: '4+ years designing and optimizing distributed backends in HealthTech, HRTech and Logistics. Currently at Envíame (Chile), where I implemented RAG architectures with ADK and LangChain that improved internal systems accuracy by 70%. Speaker at PyConChile 2025.',
+      description: '4+ years designing and optimizing distributed backends in HealthTech, HRTech and Logistics.',
       viewProjects: 'View Projects',
       downloadCV: 'Download CV',
       availability: 'Available for remote projects',
@@ -35,9 +35,9 @@ export const translations = {
       current: 'Today I work at Envíame (Santiago, remote) as a Backend & AI Engineer. I implemented RAG architectures with ADK and LangChain that improved our internal systems accuracy by 70%, and reduced latency between microservices by 25% by migrating to gRPC. My niche is the intersection between robust backends and applied AI: I don\'t just build the system, I make it smart.',
       community: 'I organize and speak at Python community events — PyConChile 2025, PyDay La Paz 2024 — and competed in ACM-ICPC ranking among the top 90 in LATAM. The technical community isn\'t extra: it\'s where I learn fastest.',
       metrics: {
-        years: { value: '4+', label: 'Years of experience', sublabel: 'Backend & AI' },
-        accuracy: { value: '70%', label: 'AI Accuracy Improvement', sublabel: 'RAG with ADK · Envíame' },
-        uptime: { value: '99.5%', label: 'Guaranteed uptime', sublabel: '+10,000 req/day · DEVOCAMP' },
+        years: { value: '4+', label: 'Years of experience', sublabel: 'Backend & AI engineer' },
+        // accuracy: { value: '70%', label: 'AI Accuracy Improvement', sublabel: 'RAG with ADK · Envíame' },
+        // uptime: { value: '99.5%', label: 'Guaranteed uptime', sublabel: '+10,000 req/day · DEVOCAMP' },
       },
     },
     // Skills
@@ -89,6 +89,44 @@ export const translations = {
       twitter: 'Twitter',
       sendMessage: 'Send Message',
     },
+    // Publications descriptions
+    publicationDescriptions: {
+      ragAdk: 'Talk on RAG architectures with ADK and LangChain for production systems.',
+      highAvailability: 'Presentation on designing scalable and resilient Python backends.',
+      restVsGrpc: 'Technical comparison between REST and gRPC architectures with real use cases.',
+      voiceInterface: 'How to implement voice interfaces with AI to improve user experience.',
+      pastSelf: 'Reflections on a programming career: lessons learned and advice for beginners.',
+    },
+    // Education
+    education: {
+      label: 'Education',
+      degree: 'Software Engineering',
+      distinction: 'Graduation with Distinction',
+    },
+    // Community items
+    communityItems: {
+      pyconchile: {
+        role: 'Speaker',
+        desc: 'Talk on RAG architectures with ADK and LangChain for production systems.',
+      },
+      pyday: {
+        role: 'Speaker',
+        desc: 'Presentation on Python for high-availability backends.',
+      },
+      acmicpc: {
+        role: 'Top 90 LATAM',
+        desc: 'International algorithmic programming competition. Top 90 in Latin America, Top 50 Bolivia.',
+      },
+      mention: {
+        role: 'UMSS',
+        desc: 'Academic honor mention at Universidad Mayor de San Simón, Cochabamba.',
+      },
+    },
+    // Community section labels
+    communityLabels: {
+      certifications: 'Certifications',
+      communityParticipation: 'Community Participation',
+    },
     // Footer
     footer: {
       builtWith: 'Built with',
@@ -112,10 +150,9 @@ export const translations = {
       greeting: 'Hola, soy',
       role: 'Ingeniero Backend & IA',
       subtitle: 'Construyo microservicios Python de alta disponibilidad e integro IA que genera impacto medible',
-      description: '4+ años diseñando y optimizando backends distribuidos en HealthTech, HRTech y Logistics. Actualmente en Envíame (Chile), donde implementé arquitecturas RAG con ADK y LangChain que mejoraron la precisión de sistemas internos en 70%. Speaker en PyConChile 2025.',
+      description: '4+ años diseñando y optimizando backends distribuidos en HealthTech, HRTech y Logistics.',
       viewProjects: 'Ver Proyectos',
       downloadCV: 'Descargar CV',
-      availability: 'Disponible para proyectos remotos',
       location: 'Cochabamba, Bolivia',
       metrics: {
         accuracy: { value: '70%', label: 'Mejora en precisión IA', context: 'RAG en producción' },
@@ -183,6 +220,44 @@ export const translations = {
       github: 'GitHub',
       twitter: 'Twitter',
       sendMessage: 'Enviar Mensaje',
+    },
+    // Descripciones de publicaciones
+    publicationDescriptions: {
+      ragAdk: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
+      highAvailability: 'Presentación sobre diseño de backends Python escalables y resilientes.',
+      restVsGrpc: 'Comparativa técnica entre arquitecturas REST y gRPC con casos de uso reales.',
+      voiceInterface: 'Cómo implementar interfaces de voz con IA para mejorar la experiencia de usuario.',
+      pastSelf: 'Reflexiones sobre la carrera en programación: lecciones aprendidas y consejos para principiantes.',
+    },
+    // Educación
+    education: {
+      label: 'Educación',
+      degree: 'Ingeniería de Software',
+      distinction: 'Graduación por Excelencia',
+    },
+    // Elementos de comunidad
+    communityItems: {
+      pyconchile: {
+        role: 'Speaker',
+        desc: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
+      },
+      pyday: {
+        role: 'Speaker',
+        desc: 'Presentación sobre Python para backends de alta disponibilidad.',
+      },
+      acmicpc: {
+        role: 'Top 90 LATAM',
+        desc: 'Competencia internacional de programación algorítmica. Top 90 de Latinoamérica, Top 50 Bolivia.',
+      },
+      mention: {
+        role: 'UMSS',
+        desc: 'Mención de honor académica en la Universidad Mayor de San Simón, Cochabamba.',
+      },
+    },
+    // Etiquetas sección comunidad
+    communityLabels: {
+      certifications: 'Certificaciones',
+      communityParticipation: 'Participación Comunitaria',
     },
     // Footer
     footer: {
