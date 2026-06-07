@@ -26,18 +26,26 @@ export interface Project {
   highlight?: boolean;
 }
 
+export interface ExperienceRole {
+  id: string;
+  roleKey: string;
+  period: { start: string; end: string | null };
+  techStack: string[];
+}
+
 export interface ExperienceEntry {
   id: string;
   company: string;
+  teamSize: number | null;
+  roles: ExperienceRole[];
+}
+
+export interface ExperienceTranslation {
   role: string;
-  period: { start: string; end: string | null };
   periodLabel: string;
   duration: string;
-  location: string;
   industry: string;
-  teamSize: number | null;
   achievements: string[];
-  techStack: string[];
 }
 
 export interface NavItem {
