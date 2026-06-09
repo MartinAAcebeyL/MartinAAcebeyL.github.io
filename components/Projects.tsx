@@ -28,7 +28,7 @@ export default function Projects({ data }: Props) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
         >
-          03. {t.nav.projects}
+          04. {t.nav.projects}
         </motion.p>
         <motion.h2
           className="section-title"

@@ -155,7 +155,7 @@ export default function Experience({ data }: Props) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
         >
-          04. {t.nav.experience}
+          02. {t.nav.experience}
         </motion.p>
         <motion.h2
           className="section-title"

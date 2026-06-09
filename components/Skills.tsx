@@ -35,7 +35,7 @@ export default function Skills({ data }: Props) {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
         >
-          02. {t.nav.skills}
+          03. {t.nav.skills}
         </motion.p>
         <motion.h2
           className="section-title"

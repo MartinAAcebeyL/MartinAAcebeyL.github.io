@@ -13,15 +13,18 @@
         },
         "techStack": [
           "Python",
+          "FastAPI",
+          "Flask",
           "LangChain",
           "ADK",
           "RAG",
+          "MCP",
           "gRPC",
           "GCP",
+          "Redis",
           "Docker",
           "CI/CD",
-          "Bitbucket Pipelines",
-          "MCP"
+          "Bitbucket Pipelines"
         ]
       }
     ]
@@ -42,9 +45,12 @@
           "Python",
           "Django",
           "DRF",
+          "Flask",
           "MySQL",
+          "Redis",
           "Docker",
-          "REST APIs"
+          "REST APIs",
+          "Git"
         ]
       },
       {
@@ -59,7 +65,8 @@
           "Express.js",
           "PostgreSQL",
           "Redis",
-          "REST APIs"
+          "REST APIs",
+          "Git"
         ]
       },
       {
@@ -73,9 +80,13 @@
           "Python",
           "Django",
           "DRF",
+          "Flask",
           "Node.js",
           "PostgreSQL",
-          "Docker"
+          "RabbitMQ",
+          "Celery",
+          "Docker",
+          "Git"
         ]
       }
     ]
@@ -116,11 +127,12 @@
         "techStack": [
           "Python",
           "Django",
+          "Flask",
           "React",
           "PostgreSQL",
           "Nginx",
           "Linux",
-          "VPS"
+          "Git"
         ]
       }
     ]
