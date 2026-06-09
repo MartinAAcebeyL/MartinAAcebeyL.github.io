@@ -3,80 +3,93 @@
     "category": "Backend & Core Languages",
     "icon": "🐍",
     "skills": [
-      { "name": "Python",           "level": "expert",       "years": 4, "evidence": "Rol principal en Envíame y DEVOCAMP" },
-      { "name": "JavaScript",       "level": "advanced",     "years": 3, "evidence": "Node.js en DEVOCAMP, React en proyectos freelance" },
-      { "name": "TypeScript",       "level": "advanced",     "years": 2, "evidence": "Mencionado en GitHub stack" },
-      { "name": "SQL",              "level": "expert",       "years": 4, "evidence": "Teaching Assistant BD, optimizaciones 30-40% en producción" },
-      { "name": "Go",               "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" }
+      { "name": "Python",       "devicon": "devicon-python-plain",      "level": "expert",       "evidence": "Rol principal en Envíame y DEVOCAMP" },
+      { "name": "JavaScript",   "devicon": "devicon-javascript-plain",  "level": "advanced",     "evidence": "Node.js en DEVOCAMP, React en proyectos freelance" },
+      { "name": "TypeScript",   "devicon": "devicon-typescript-plain",  "level": "advanced",     "evidence": "Mencionado en GitHub stack" },
+      { "name": "Java",         "devicon": "devicon-java-plain",        "level": "intermediate", "evidence": "Mencionado en GitHub stack" },
+      { "name": "SQL",          "devicon": "devicon-azuresqldatabase-plain", "level": "expert",  "evidence": "Teaching Assistant BD, optimizaciones 30-40% en producción" },
+      { "name": "Go",           "devicon": "devicon-go-plain",          "level": "intermediate", "evidence": "Mencionado en GitHub stack" }
     ]
   },
   {
     "category": "AI & Agents",
     "icon": "🤖",
     "skills": [
-      { "name": "LangChain",       "level": "expert",       "years": 2, "evidence": "Arquitecturas RAG en Envíame, +70% precisión" },
-      { "name": "ADK (Agent Development Kit)", "level": "expert", "years": 2, "evidence": "Agentes autónomos en Envíame y AI Agent Suite" },
-      { "name": "RAG",             "level": "expert",       "years": 2, "evidence": "Implementado en producción en Envíame" },
-      { "name": "MCP",             "level": "advanced",     "years": 1, "evidence": "Mencionado en CV — AI Agent Suite" },
-      { "name": "Gemini API",      "level": "advanced",     "years": 1, "evidence": "Mencionado en GitHub stack" },
-      { "name": "n8n",             "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack — automatización" },
-      { "name": "Vector DBs",      "level": "advanced",     "years": 2, "evidence": "Parte del pipeline RAG en Envíame" }
+      { "name": "LangChain",   "devicon": "devicon-langchain-plain",        "level": "expert",       "evidence": "Arquitecturas RAG en Envíame, +70% precisión" },
+      { "name": "ADK",         "devicon": "devicon-google-plain",           "level": "expert",       "evidence": "Agentes autónomos en Envíame y AI Agent Suite" },
+      { "name": "RAG",         "devicon": "devicon-openai-plain",           "level": "expert",       "evidence": "Implementado en producción en Envíame" },
+      { "name": "MCP",         "devicon": "devicon-anthropic-plain",        "level": "advanced",     "evidence": "Mencionado en CV — AI Agent Suite" },
+      { "name": "Gemini API",  "devicon": "devicon-googlegemini-plain",     "level": "advanced",     "evidence": "Mencionado en GitHub stack" },
+      { "name": "n8n",         "devicon": "devicon-n8n-plain",              "level": "intermediate", "evidence": "Mencionado en GitHub stack — automatización" },
+      { "name": "Vector DBs",  "devicon": "devicon-chromadb-plain",         "level": "advanced",     "evidence": "Parte del pipeline RAG en Envíame" }
     ]
   },
   {
     "category": "Backend Frameworks",
     "icon": "⚡",
     "skills": [
-      { "name": "Django",          "level": "expert",       "years": 3, "evidence": "Rol principal en DEVOCAMP, 1+ año" },
-      { "name": "Django REST Framework", "level": "expert", "years": 3, "evidence": "API core en DEVOCAMP HealthTech" },
-      { "name": "FastAPI",         "level": "advanced",     "years": 2, "evidence": "Mencionado en GitHub stack y CV" },
-      { "name": "Flask",           "level": "advanced",     "years": 2, "evidence": "Mencionado en GitHub stack" },
-      { "name": "Node.js",         "level": "advanced",     "years": 2, "evidence": "Rol Node.js Developer en DEVOCAMP HRTech" },
-      { "name": "Express.js",      "level": "advanced",     "years": 2, "evidence": "Backend recruiting app en DEVOCAMP" }
+      { "name": "Django",      "devicon": "devicon-django-plain",       "level": "expert",       "evidence": "Rol principal en DEVOCAMP, 1+ año" },
+      { "name": "DRF",         "devicon": "devicon-djangorest-plain",   "level": "expert",       "evidence": "API core en DEVOCAMP HealthTech" },
+      { "name": "FastAPI",     "devicon": "devicon-fastapi-plain",      "level": "advanced",     "evidence": "Mencionado en GitHub stack y CV" },
+      { "name": "Flask",       "devicon": "devicon-flask-original",     "level": "advanced",     "evidence": "Mencionado en GitHub stack" },
+      { "name": "Node.js",     "devicon": "devicon-nodejs-plain",       "level": "advanced",     "evidence": "Rol Node.js Developer en DEVOCAMP HRTech" },
+      { "name": "Express.js",  "devicon": "devicon-express-original",   "level": "advanced",     "evidence": "Backend recruiting app en DEVOCAMP" },
+      { "name": "React",       "devicon": "devicon-react-original",     "level": "intermediate", "evidence": "Frontend en proyectos freelance" }
     ]
   },
   {
     "category": "Bases de Datos",
     "icon": "🗄️",
     "skills": [
-      { "name": "PostgreSQL",      "level": "expert",       "years": 4, "evidence": "Diseño de arquitecturas desde cero en proyectos freelance" },
-      { "name": "MySQL",           "level": "expert",       "years": 3, "evidence": "Optimización +30% en DEVOCAMP; Teaching Assistant" },
-      { "name": "MongoDB",         "level": "advanced",     "years": 2, "evidence": "Certificación CRUD; mencionado en GitHub stack" },
-      { "name": "Redis",           "level": "advanced",     "years": 2, "evidence": "Caching en DEVOCAMP -35% response time; Legal Scraping" },
-      { "name": "Firebase",        "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" },
-      { "name": "Supabase",        "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" }
+      { "name": "PostgreSQL",  "devicon": "devicon-postgresql-plain",   "level": "expert",       "evidence": "Diseño de arquitecturas desde cero en proyectos freelance" },
+      { "name": "MySQL",       "devicon": "devicon-mysql-plain",        "level": "expert",       "evidence": "Optimización +30% en DEVOCAMP; Teaching Assistant" },
+      { "name": "MongoDB",     "devicon": "devicon-mongodb-plain",      "level": "advanced",     "evidence": "Certificación CRUD; mencionado en GitHub stack" },
+      { "name": "Redis",       "devicon": "devicon-redis-plain",        "level": "advanced",     "evidence": "Caching en DEVOCAMP -35% response time; Legal Scraping" },
+      { "name": "Firebase",    "devicon": "devicon-firebase-plain",     "level": "intermediate", "evidence": "Mencionado en GitHub stack" },
+      { "name": "Supabase",    "devicon": "devicon-supabase-plain",     "level": "intermediate", "evidence": "Mencionado en GitHub stack" }
     ]
   },
   {
     "category": "Cloud & DevOps",
     "icon": "☁️",
     "skills": [
-      { "name": "Google Cloud Platform (GCP)", "level": "advanced", "years": 2, "evidence": "Reducción 50% recursos en Envíame con gRPC" },
-      { "name": "Docker",          "level": "advanced",     "years": 3, "evidence": "CI/CD en Envíame, -50% errores producción" },
-      { "name": "CI/CD",           "level": "advanced",     "years": 2, "evidence": "Bitbucket Pipelines en Envíame" },
-      { "name": "Linux",           "level": "advanced",     "years": 4, "evidence": "VPS administration, Nginx, SSL en proyectos freelance" },
-      { "name": "Vercel",          "level": "intermediate", "years": 2, "evidence": "Mencionado en GitHub stack" },
-      { "name": "Render",          "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack" }
+      { "name": "GCP",         "devicon": "devicon-googlecloud-plain",  "level": "advanced",     "evidence": "Reducción 50% recursos en Envíame con gRPC" },
+      { "name": "Docker",      "devicon": "devicon-docker-plain",       "level": "advanced",     "evidence": "CI/CD en Envíame, -50% errores producción" },
+      { "name": "CI/CD",       "devicon": null,                         "level": "advanced",     "evidence": "Bitbucket Pipelines en Envíame" },
+      { "name": "Linux",       "devicon": "devicon-linux-plain",        "level": "advanced",     "evidence": "VPS administration, Nginx, SSL en proyectos freelance" },
+      { "name": "Vercel",      "devicon": "devicon-vercel-plain",       "level": "intermediate", "evidence": "Mencionado en GitHub stack" }
     ]
   },
   {
     "category": "Protocolos & Integración",
     "icon": "🔗",
     "skills": [
-      { "name": "gRPC",            "level": "advanced",     "years": 2, "evidence": "-25% latencia, -50% recursos GCP en Envíame" },
-      { "name": "REST",            "level": "expert",       "years": 4, "evidence": "Todas las posiciones laborales" },
-      { "name": "GraphQL",         "level": "intermediate", "years": 2, "evidence": "Mencionado en GitHub stack y CV" },
-      { "name": "Celery",          "level": "advanced",     "years": 2, "evidence": "Legal Scraping — orquestación de tareas asíncronas" }
+      { "name": "gRPC",        "devicon": null,                         "level": "advanced",     "evidence": "-25% latencia, -50% recursos GCP en Envíame" },
+      { "name": "REST",        "devicon": null,                         "level": "expert",       "evidence": "Todas las posiciones laborales" },
+      { "name": "GraphQL",     "devicon": "devicon-graphql-plain",      "level": "intermediate", "evidence": "Mencionado en GitHub stack y CV" },
+      { "name": "Celery",      "devicon": "devicon-celery-plain",       "level": "advanced",     "evidence": "Legal Scraping — orquestación de tareas asíncronas" }
     ]
   },
   {
     "category": "Testing & Quality",
     "icon": "🧪",
     "skills": [
-      { "name": "pytest",          "level": "advanced",     "years": 3, "evidence": "Testing en Envíame y DEVOCAMP" },
-      { "name": "Jest",            "level": "intermediate", "years": 2, "evidence": "Mencionado en GitHub stack" },
-      { "name": "Selenium",        "level": "advanced",     "years": 2, "evidence": "Legal Scraping — extracción web" },
-      { "name": "SonarQube",       "level": "intermediate", "years": 1, "evidence": "Mencionado en GitHub stack y CV" }
+      { "name": "pytest",      "devicon": "devicon-pytest-plain",       "level": "advanced",     "evidence": "Testing en Envíame y DEVOCAMP" },
+      { "name": "Playwright",  "devicon": "devicon-playwright-plain",   "level": "intermediate", "evidence": "Testing E2E" },
+      { "name": "Jest",        "devicon": "devicon-jest-plain",         "level": "intermediate", "evidence": "Mencionado en GitHub stack" },
+      { "name": "Selenium",    "devicon": "devicon-selenium-original",  "level": "advanced",     "evidence": "Legal Scraping — extracción web" },
+      { "name": "SonarQube",   "devicon": "devicon-sonarqube-plain",    "level": "intermediate", "evidence": "Mencionado en GitHub stack y CV" }
+    ]
+  },
+  {
+    "category": "Dev Tools",
+    "icon": "🛠️",
+    "skills": [
+      { "name": "Git",         "devicon": "devicon-git-plain",          "level": "expert",       "evidence": "Control de versiones en todas las posiciones" },
+      { "name": "GitHub",      "devicon": "devicon-github-original",    "level": "expert",       "evidence": "Repositorios personales y proyectos open source" },
+      { "name": "Bitbucket",   "devicon": "devicon-bitbucket-original", "level": "advanced",     "evidence": "Bitbucket Pipelines CI/CD en Envíame" },
+      { "name": "Postman",     "devicon": "devicon-postman-plain",      "level": "advanced",     "evidence": "Testing y documentación de APIs REST" },
+      { "name": "Swagger",     "devicon": "devicon-swagger-plain",      "level": "advanced",     "evidence": "Documentación de APIs en DEVOCAMP y Envíame" }
     ]
   }
 ]

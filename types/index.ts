@@ -1,5 +1,6 @@
 export interface SkillItem {
   name: string;
+  devicon?: string | null;
   level: 'beginner' | 'intermediate' | 'advanced' | 'expert';
   years?: number;
   evidence?: string;
