@@ -12,19 +12,23 @@ export interface SkillCategory {
   skills: SkillItem[];
 }
 
-export interface Project {
-  id: string;
+export interface ProjectDescription {
   title: string;
   tagline: string;
   problem: string;
   solution: string;
   results: string[];
+}
+
+export interface Project {
+  id: string;
+  descriptionKey: string;
   tech: string[];
   type: 'professional' | 'personal';
   repoPublic: boolean;
   company: string | null;
   period?: string;
-  highlight?: boolean;
+  category: 'ai-agents' | 'backend' | 'automation' | 'fullstack';
 }
 
 export interface ExperienceRole {

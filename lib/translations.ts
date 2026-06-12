@@ -181,6 +181,108 @@ export const translations = {
       voiceInterface: 'How to implement voice interfaces with AI to improve user experience.',
       pastSelf: 'Reflections on a programming career: lessons learned and advice for beginners.',
     },
+    // Project descriptions
+    projectDescriptions: {
+      grpcMicroservices: {
+        title: 'gRPC Microservices Optimization',
+        tagline: 'Refactoring inter-service communication: -25% latency, -50% GCP resource usage.',
+        problem: 'Envíame\'s microservices communicated over REST with high JSON serialization overhead. Under peak load, latency was unacceptable and GCP resource usage was disproportionate to data volume.',
+        solution: 'Strategic migration from REST to gRPC with Protocol Buffers: redefining service contracts, implementing bidirectional streaming where appropriate, and optimizing resource pooling on GCP.',
+        results: [
+          '-25% reduction in network latency',
+          '-50% improvement in GCP resource utilization (direct cost reduction)',
+          'Higher sustained throughput under peak load',
+        ],
+      },
+      legalScraping: {
+        title: 'Judicial Auction Scraper',
+        tagline: 'Scraping system to monitor judicial auctions in Bolivia.',
+        problem: 'Lawyers and asset buyers had to manually check the main judicial auction websites in Bolivia to spot new auctions, a slow and error-prone process.',
+        solution: 'Web scraping project with Beautiful Soup and Selenium to extract information from the main judicial auction websites in Bolivia, automating data collection.',
+        results: [
+          'Automated collection of judicial auction data',
+          'More efficient analysis of auction information',
+          'Public repository with the full solution',
+        ],
+      },
+      scheduleRecommendation: {
+        title: 'Schedule Recommendation App',
+        tagline: 'Web app to plan academic schedules without clashes between subjects.',
+        problem: 'Students must manually build their class schedules every semester, which often leads to time conflicts between subjects and makes planning difficult.',
+        solution: 'Web application that lets users create class schedules efficiently, optimizing course selection and ensuring a schedule free of time conflicts.',
+        results: [
+          'Generates schedules with no conflicts between subjects',
+          'Significant improvement in the schedule management experience',
+          'Public repository with the full solution',
+        ],
+      },
+      whatsappAutomation: {
+        title: 'WhatsApp Bulk Messaging Automation',
+        tagline: 'Desktop tool to send bulk text and media messages via WhatsApp.',
+        problem: 'Manually sending messages and media to multiple WhatsApp contacts or groups is slow and doesn\'t scale for campaigns or mass notifications.',
+        solution: 'Desktop application that automates bulk sending of text and media messages via WhatsApp, on a schedule and at scale, using Selenium and the Drive API.',
+        results: [
+          'Bulk, scheduled sending of messages and media',
+          'Scalable solution for campaigns and notifications',
+          'Public repository with the full solution',
+        ],
+      },
+      canchaWasi: {
+        title: 'Cancha Wasi',
+        tagline: 'Full-stack platform for booking sports courts, with its own backend and frontend.',
+        problem: 'Sports court administrators manage bookings manually (WhatsApp, notebooks), causing overlaps and wasted time for both owners and customers.',
+        solution: 'Development of a full-stack platform (CanchaWasiBack + cancha-wasi-front) that lets users see real-time availability and book courts, while admins manage schedules, prices, and bookings from their own panel.',
+        results: [
+          'Real-time booking system for multiple courts',
+          'Independent admin panel for court owners',
+          'Decoupled backend/frontend architecture, in active development',
+        ],
+      },
+      smartBusinessAgent: {
+        title: 'Conversational Business Agent',
+        tagline: 'Chatbot that gives accurate answers based on a real company\'s information.',
+        problem: 'Small and medium business owners need quick, reliable answers about their business without relying on manual reports or a technical team.',
+        solution: 'Development of a conversational agent (chatbot) that provides accurate, relevant answers based on a real company\'s information, using natural language processing tools for smooth interactions.',
+        results: [
+          'Conversational agent able to answer questions using the business\'s own data',
+          'Smooth interactions through natural language processing',
+          'Architecture built on LangChain, n8n, and MCP',
+        ],
+      },
+      proptechAgent: {
+        title: 'PropTech Agent',
+        tagline: 'AI agent for the real estate sector to automate property inquiries and processes.',
+        problem: 'Real estate agencies and agents spend a lot of time answering repetitive questions about available properties, prices, and conditions.',
+        solution: 'AI agent focused on the proptech domain that automates handling property inquiries, integrating catalog data and responding in natural language to potential clients.',
+        results: [
+          'Automation of frequent property inquiries',
+          'Reduced response time to potential clients',
+          'Experimental project in active development',
+        ],
+      },
+      grpcPyconChile: {
+        title: 'gRPC Performance Workshop — PyCon Chile 2025',
+        tagline: 'Materials and code from the gRPC workshop given at PyCon Chile 2025.',
+        problem: 'Many Python developers know REST but haven\'t worked with gRPC, a high-performance RPC framework key to efficient communication between services.',
+        solution: 'Application focused on optimizing speed and data handling using gRPC to establish efficient, low-latency communication between services, presented as a workshop at PyCon Chile 2025.',
+        results: [
+          'Workshop delivered at PyCon Chile 2025',
+          'Public repository with practical gRPC examples in Python',
+          'Low-latency communication between services',
+        ],
+      },
+      fastTodo: {
+        title: 'Fast Todo',
+        tagline: 'Task API with REST and GraphQL endpoints over the same domain, built with FastAPI.',
+        problem: 'Comparing REST and GraphQL approaches in practice over the same data domain, to understand their differences in design, querying, and performance.',
+        solution: 'Implementation of a task management (todo list) API with FastAPI, exposing the same domain through REST endpoints and a GraphQL schema, allowing both approaches to be compared under the same business rules.',
+        results: [
+          'Functional API with a dual interface: REST and GraphQL',
+          'Public repository as a reference for both approaches with FastAPI',
+          'Reusable base for experimenting with new FastAPI features',
+        ],
+      },
+    },
     // Education
     education: {
       label: 'Education',
@@ -396,6 +498,108 @@ export const translations = {
       restVsGrpc: 'Comparativa técnica entre arquitecturas REST y gRPC con casos de uso reales.',
       voiceInterface: 'Cómo implementar interfaces de voz con IA para mejorar la experiencia de usuario.',
       pastSelf: 'Reflexiones sobre la carrera en programación: lecciones aprendidas y consejos para principiantes.',
+    },
+    // Descripciones de proyectos
+    projectDescriptions: {
+      grpcMicroservices: {
+        title: 'Optimización de Microservicios con gRPC',
+        tagline: 'Refactoring de comunicación entre microservicios: -25% latencia, -50% recursos en GCP.',
+        problem: 'Los microservicios de Envíame se comunicaban vía REST con alto overhead de serialización JSON. Bajo carga pico, la latencia era inaceptable y el uso de recursos en GCP era desproporcionado al volumen de datos.',
+        solution: 'Migración estratégica de REST a gRPC con Protocol Buffers: redefinición de contratos de servicio, implementación de streaming bidireccional donde correspondía, y optimización de resource pooling en GCP.',
+        results: [
+          '-25% reducción de latencia de red',
+          '-50% mejora en utilización de recursos en GCP (reducción directa de costos)',
+          'Mayor throughput sostenido bajo carga pico',
+        ],
+      },
+      legalScraping: {
+        title: 'Scraping de Remates Judiciales',
+        tagline: 'Sistema de scraping para monitorear remates judiciales en Bolivia.',
+        problem: 'Abogados y compradores de activos debían revisar manualmente las principales páginas de remates judiciales en Bolivia para detectar nuevas subastas, un proceso lento y propenso a errores.',
+        solution: 'Proyecto de web scraping con Beautiful Soup y Selenium para extraer información de las principales páginas de remates judiciales en Bolivia, automatizando la recopilación de datos.',
+        results: [
+          'Automatización de la recopilación de datos de remates judiciales',
+          'Análisis más eficiente de la información de subastas',
+          'Repositorio público con la solución completa',
+        ],
+      },
+      scheduleRecommendation: {
+        title: 'Aplicación de Recomendación de Horarios',
+        tagline: 'App web para planificar horarios académicos sin choques entre asignaturas.',
+        problem: 'Los estudiantes deben armar manualmente sus horarios de clases cada semestre, lo que genera frecuentes conflictos de horario entre asignaturas y dificulta la planificación.',
+        solution: 'Aplicación web que permite a los usuarios crear horarios de clases de manera eficiente, optimizando la selección de cursos y garantizando una distribución sin choques de horario.',
+        results: [
+          'Generación de horarios sin conflictos entre asignaturas',
+          'Mejora significativa en la experiencia de gestión de horarios',
+          'Repositorio público con la solución completa',
+        ],
+      },
+      whatsappAutomation: {
+        title: 'Automatización de Envío de Mensajes a WhatsApp',
+        tagline: 'Herramienta de escritorio para enviar mensajes masivos y multimedia por WhatsApp.',
+        problem: 'Enviar mensajes y contenido multimedia a múltiples contactos o grupos de WhatsApp de forma manual es lento y poco escalable para campañas o notificaciones masivas.',
+        solution: 'Aplicación de escritorio que automatiza el envío masivo de mensajes de texto y multimedia a través de WhatsApp, de forma programada y escalable, usando Selenium y la API de Drive.',
+        results: [
+          'Envío masivo y programado de mensajes y multimedia',
+          'Solución escalable para campañas y notificaciones',
+          'Repositorio público con la solución completa',
+        ],
+      },
+      canchaWasi: {
+        title: 'Cancha Wasi',
+        tagline: 'Plataforma full-stack para reserva de canchas deportivas, con backend y frontend propios.',
+        problem: 'Los administradores de canchas deportivas gestionan reservas de forma manual (WhatsApp, cuadernos), generando solapamientos y pérdida de tiempo tanto para el dueño como para los clientes.',
+        solution: 'Desarrollo de una plataforma full-stack (CanchaWasiBack + cancha-wasi-front) que permite a los usuarios ver disponibilidad en tiempo real y reservar canchas, mientras los administradores gestionan horarios, precios y reservas desde un panel propio.',
+        results: [
+          'Sistema de reservas en tiempo real para múltiples canchas',
+          'Panel de administración independiente para dueños de canchas',
+          'Arquitectura desacoplada backend/frontend en desarrollo activo',
+        ],
+      },
+      smartBusinessAgent: {
+        title: 'Agente Conversacional con Información Empresarial',
+        tagline: 'Chatbot con respuestas precisas basadas en información real de una empresa.',
+        problem: 'Los dueños de pequeños y medianos negocios necesitan respuestas rápidas y confiables sobre su negocio sin depender de reportes manuales o un equipo técnico.',
+        solution: 'Desarrollo de un agente conversacional (chatbot) que proporciona respuestas precisas y relevantes basándose en información real de una empresa, usando herramientas de procesamiento de lenguaje natural para interacciones fluidas.',
+        results: [
+          'Agente conversacional capaz de responder sobre datos propios del negocio',
+          'Interacciones fluidas mediante procesamiento de lenguaje natural',
+          'Arquitectura basada en LangChain, n8n y MCP',
+        ],
+      },
+      proptechAgent: {
+        title: 'PropTech Agent',
+        tagline: 'Agente de IA aplicado al sector inmobiliario para automatizar consultas y procesos de propiedades.',
+        problem: 'Las inmobiliarias y agentes de bienes raíces dedican mucho tiempo a responder consultas repetitivas sobre propiedades disponibles, precios y condiciones.',
+        solution: 'Agente de IA enfocado en el dominio proptech que automatiza la atención de consultas sobre propiedades, integrando datos de catálogo y respondiendo en lenguaje natural a clientes potenciales.',
+        results: [
+          'Automatización de consultas frecuentes sobre propiedades',
+          'Reducción del tiempo de respuesta a clientes potenciales',
+          'Proyecto experimental en desarrollo activo',
+        ],
+      },
+      grpcPyconChile: {
+        title: 'Mejora de Velocidad y Transmisión de Datos con gRPC',
+        tagline: 'Material y código del taller de gRPC dictado en PyCon Chile 2025.',
+        problem: 'Muchos desarrolladores Python conocen REST pero no han trabajado con gRPC, un framework RPC de alto rendimiento clave para comunicación eficiente entre servicios.',
+        solution: 'Aplicación enfocada en optimizar la velocidad y el manejo de datos utilizando gRPC para establecer una comunicación eficiente y de baja latencia entre servicios, dictada como taller en PyCon Chile 2025.',
+        results: [
+          'Taller dictado en PyCon Chile 2025',
+          'Repositorio público con ejemplos prácticos de gRPC en Python',
+          'Comunicación de baja latencia entre servicios',
+        ],
+      },
+      fastTodo: {
+        title: 'Fast Todo',
+        tagline: 'API de tareas con endpoints REST y GraphQL implementados sobre el mismo dominio con FastAPI.',
+        problem: 'Comparar en la práctica los enfoques REST y GraphQL sobre un mismo dominio de datos, para entender sus diferencias de diseño, consultas y rendimiento.',
+        solution: 'Implementación de una API de gestión de tareas (todo list) con FastAPI, exponiendo el mismo dominio mediante endpoints REST y un esquema GraphQL, permitiendo comparar ambos enfoques bajo las mismas reglas de negocio.',
+        results: [
+          'API funcional con doble interfaz: REST y GraphQL',
+          'Repositorio público como referencia de ambos enfoques con FastAPI',
+          'Base reutilizable para experimentar con nuevas features de FastAPI',
+        ],
+      },
     },
     // Educación
     education: {

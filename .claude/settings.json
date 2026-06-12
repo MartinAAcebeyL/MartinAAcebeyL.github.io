@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n -B3 -A1 -iE \"medical management platform|10,000\\\\+ daily requests|99.5% uptime|plataforma.{0,5}m[ée]dic\" lib/translations.ts)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

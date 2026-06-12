@@ -1,46 +1,10 @@
 [
   {
-    "id": "rag-agent-system",
-    "title": "RAG Agent System",
-    "company": "Envíame",
-    "tagline": "Arquitectura de agentes AI que mejoró la precisión de respuestas internas en 70%.",
-    "type": "personal",
-    "repoPublic": false,
-    "period": "2023–presente",
-    "problem": "Los sistemas internos de Envíame necesitaban acceso preciso a datos propietarios de logística. Las búsquedas genéricas fallaban con información específica del negocio, requiriendo intervención manual constante.",
-    "solution": "Diseñé e implementé una arquitectura RAG completa con ADK (Agent Development Kit) y LangChain: pipeline de ingesta de documentos, generación de embeddings, vector search y agentes autónomos capaces de responder consultas en tiempo real sobre datos propietarios.",
-    "results": [
-      "+70% mejora en precisión de respuestas en sistemas internos",
-      "Automatización de operaciones que antes requerían intervención manual diaria",
-      "Reducción de tiempo de resolución de consultas internas"
-    ],
-    "tech": [
-      "Python",
-      "LangChain",
-      "ADK",
-      "RAG",
-      "Vector DBs",
-      "MCP",
-      "GCP",
-      "FastAPI"
-    ],
-    "highlight": true
-  },
-  {
     "id": "grpc-microservices",
-    "title": "gRPC Microservices Optimization",
     "company": "Envíame",
-    "tagline": "Refactoring de comunicación entre microservicios: -25% latencia, -50% recursos en GCP.",
     "type": "personal",
     "repoPublic": false,
     "period": "2024",
-    "problem": "Los microservicios de Envíame se comunicaban vía REST con alto overhead de serialización JSON. Bajo carga pico, la latencia era inaceptable y el uso de recursos en GCP era desproporcionado al volumen de datos.",
-    "solution": "Migración estratégica de REST a gRPC con Protocol Buffers: redefinición de contratos de servicio, implementación de streaming bidireccional donde correspondía, y optimización de resource pooling en GCP.",
-    "results": [
-      "-25% reducción de latencia de red",
-      "-50% mejora en utilización de recursos en GCP (reducción directa de costos)",
-      "Mayor throughput sostenido bajo carga pico"
-    ],
     "tech": [
       "Python",
       "gRPC",
@@ -48,96 +12,29 @@
       "GCP",
       "Docker"
     ],
-    "highlight": true
-  },
-  {
-    "id": "medical-management-platform",
-    "title": "Medical Management Platform",
-    "company": "DEVOCAMP",
-    "tagline": "Plataforma HealthTech con 99.5% uptime procesando +10,000 peticiones diarias.",
-    "type": "personal",
-    "repoPublic": false,
-    "period": "2022–2023",
-    "problem": "Un sistema médico legacy con baja performance gestionaba registros de pacientes, citas y flujos clínicos. Las consultas lentas afectaban la experiencia de médicos y pacientes, y las integraciones con terceros no cumplían estándares HIPAA.",
-    "solution": "Rediseño del core backend con Django + DRF, optimización de queries MySQL mediante ORM tuning e indexación estratégica, y reingeniería de las integraciones con APIs de sistemas de salud para asegurar compliance HIPAA.",
-    "results": [
-      "+10,000 peticiones diarias sostenidas con 99.5% uptime",
-      "+30% mejora en performance de queries críticas",
-      "Compliance HIPAA mantenido en todas las integraciones con sistemas de salud"
-    ],
-    "tech": [
-      "Python",
-      "Django",
-      "DRF",
-      "MySQL",
-      "Docker",
-      "REST APIs"
-    ],
-    "highlight": true
-  },
-  {
-    "id": "ai-agent-suite",
-    "title": "AI Agent Suite",
-    "company": null,
-    "tagline": "Suite modular de agentes conversacionales empresariales con acceso a datos en tiempo real.",
-    "type": "personal",
-    "repoPublic": false,
-    "period": "2024–2025",
-    "problem": "Las empresas necesitan agentes que respondan sobre sus propios datos sin reentrenar modelos ni exponer APIs sensibles. Las soluciones genéricas no se adaptan al contexto específico de cada negocio.",
-    "solution": "Arquitectura modular con LangChain + ADK + MCP: los agentes consumen herramientas personalizadas, consultan bases de datos en tiempo real y mantienen contexto multi-turno. Diseñado para ser desplegable en múltiples dominios sin cambios en el core.",
-    "results": [
-      "Suite reutilizable aplicada en múltiples dominios de negocio",
-      "Base de la arquitectura de agentes desplegada en producción en Envíame",
-      "Reducción del tiempo de setup de nuevos agentes empresariales"
-    ],
-    "tech": [
-      "Python",
-      "LangChain",
-      "ADK",
-      "MCP",
-      "Vector DBs",
-      "FastAPI",
-      "PostgreSQL"
-    ],
-    "highlight": false
+    "category": "backend",
+    "descriptionKey": "grpcMicroservices"
   },
   {
     "id": "legal-scraping-system",
-    "title": "Scraping de Remates Judiciales",
     "company": null,
-    "tagline": "Sistema de scraping para monitorear remates judiciales en Bolivia.",
     "type": "personal",
     "repoPublic": true,
     "period": "2023",
-    "problem": "Abogados y compradores de activos debían revisar manualmente las principales páginas de remates judiciales en Bolivia para detectar nuevas subastas, un proceso lento y propenso a errores.",
-    "solution": "Proyecto de web scraping con Beautiful Soup y Selenium para extraer información de las principales páginas de remates judiciales en Bolivia, automatizando la recopilación de datos.",
-    "results": [
-      "Automatización de la recopilación de datos de remates judiciales",
-      "Análisis más eficiente de la información de subastas",
-      "Repositorio público con la solución completa"
-    ],
     "tech": [
       "Python",
       "Beautiful Soup",
       "Selenium"
     ],
-    "highlight": false
+    "category": "automation",
+    "descriptionKey": "legalScraping"
   },
   {
     "id": "schedule-recommendation",
-    "title": "Aplicación de Recomendación de Horarios",
     "company": null,
-    "tagline": "App web para planificar horarios académicos sin choques entre asignaturas.",
     "type": "personal",
     "repoPublic": true,
     "period": "2023",
-    "problem": "Los estudiantes deben armar manualmente sus horarios de clases cada semestre, lo que genera frecuentes conflictos de horario entre asignaturas y dificulta la planificación.",
-    "solution": "Aplicación web que permite a los usuarios crear horarios de clases de manera eficiente, optimizando la selección de cursos y garantizando una distribución sin choques de horario.",
-    "results": [
-      "Generación de horarios sin conflictos entre asignaturas",
-      "Mejora significativa en la experiencia de gestión de horarios",
-      "Repositorio público con la solución completa"
-    ],
     "tech": [
       "Python",
       "Django",
@@ -146,99 +43,30 @@
       "CSS",
       "MySQL"
     ],
-    "highlight": false
+    "category": "fullstack",
+    "descriptionKey": "scheduleRecommendation"
   },
   {
     "id": "whatsapp-automation",
-    "title": "Automatización de Envío de Mensajes a WhatsApp",
     "company": null,
-    "tagline": "Herramienta de escritorio para enviar mensajes masivos y multimedia por WhatsApp.",
     "type": "personal",
     "repoPublic": true,
     "period": "2023",
-    "problem": "Enviar mensajes y contenido multimedia a múltiples contactos o grupos de WhatsApp de forma manual es lento y poco escalable para campañas o notificaciones masivas.",
-    "solution": "Aplicación de escritorio que automatiza el envío masivo de mensajes de texto y multimedia a través de WhatsApp, de forma programada y escalable, usando Selenium y la API de Drive.",
-    "results": [
-      "Envío masivo y programado de mensajes y multimedia",
-      "Solución escalable para campañas y notificaciones",
-      "Repositorio público con la solución completa"
-    ],
     "tech": [
       "Python",
       "Selenium",
       "API Drive",
       "Chromium"
     ],
-    "highlight": false
-  },
-  {
-    "id": "uf-scraping-api",
-    "title": "API de Scraping para el Valor de la UF",
-    "company": null,
-    "tagline": "API RESTful que provee el valor histórico de la Unidad de Fomento (UF) de Chile.",
-    "type": "personal",
-    "repoPublic": true,
-    "period": "2023",
-    "problem": "Obtener el valor histórico de la UF de Chile para una fecha específica requiere consultar manualmente fuentes oficiales, sin una forma programática sencilla de acceder a esos datos.",
-    "solution": "API RESTful con Flask y Beautifulsoup4 que extrae datos de fuentes oficiales mediante web scraping y permite consultar el valor de la UF para una fecha específica, completamente contenerizada con Docker.",
-    "results": [
-      "Consulta del valor histórico de la UF por fecha vía API",
-      "Despliegue sencillo gracias a contenerización con Docker Compose",
-      "Cobertura de tests con Unittest"
-    ],
-    "tech": [
-      "Flask",
-      "Beautifulsoup4",
-      "Docker",
-      "Docker Compose",
-      "Unittest"
-    ],
-    "highlight": false
-  },
-  {
-    "id": "ecommerce-microservices",
-    "title": "E-commerce con Microservicios",
-    "company": null,
-    "tagline": "Aplicación e-commerce con arquitectura de microservicios para análisis de mercado vía 'me gusta'.",
-    "type": "personal",
-    "repoPublic": true,
-    "period": "2023",
-    "problem": "Una aplicación de e-commerce monolítica dificulta el desarrollo desacoplado de funcionalidades y la escalabilidad independiente de cada componente del sistema.",
-    "solution": "Pequeña aplicación web con arquitectura de microservicios que sirve como estudio de mercado a través del análisis de 'me gusta' de los clientes, con servicios independientes desarrollados con Django, DRF y FastAPI.",
-    "results": [
-      "Arquitectura de microservicios con desarrollo desacoplado",
-      "Alta escalabilidad por componente",
-      "Comunicación entre servicios vía RabbitMQ"
-    ],
-    "tech": [
-      "Python",
-      "Django",
-      "DRF",
-      "FastAPI",
-      "Unittest",
-      "Docker",
-      "Docker Compose",
-      "RabbitMQ",
-      "MySQL",
-      "PostgreSQL"
-    ],
-    "highlight": false
+    "category": "automation",
+    "descriptionKey": "whatsappAutomation"
   },
   {
     "id": "cancha-wasi",
-    "title": "Cancha Wasi",
     "company": null,
-    "tagline": "Plataforma full-stack para reserva de canchas deportivas, con backend y frontend propios.",
     "type": "personal",
     "repoPublic": false,
     "period": "2025–presente",
-    "problem": "Los administradores de canchas deportivas gestionan reservas de forma manual (WhatsApp, cuadernos), generando solapamientos y pérdida de tiempo tanto para el dueño como para los clientes.",
-    "solution": "Desarrollo de una plataforma full-stack (CanchaWasiBack + cancha-wasi-front) que permite a los usuarios ver disponibilidad en tiempo real y reservar canchas, mientras los administradores gestionan horarios, precios y reservas desde un panel propio.",
-    "results": [
-      "Sistema de reservas en tiempo real para múltiples canchas",
-      "Panel de administración independiente para dueños de canchas",
-      "Arquitectura desacoplada backend/frontend en desarrollo activo"
-    ],
     "tech": [
       "Python",
       "FastAPI",
@@ -246,46 +74,30 @@
       "Next.js",
       "Docker"
     ],
-    "highlight": false
+    "category": "fullstack",
+    "descriptionKey": "canchaWasi"
   },
   {
     "id": "smart-business-agent",
-    "title": "Agente Conversacional con Información Empresarial",
     "company": null,
-    "tagline": "Chatbot con respuestas precisas basadas en información real de una empresa.",
     "type": "personal",
     "repoPublic": false,
     "period": "2025–2026",
-    "problem": "Los dueños de pequeños y medianos negocios necesitan respuestas rápidas y confiables sobre su negocio sin depender de reportes manuales o un equipo técnico.",
-    "solution": "Desarrollo de un agente conversacional (chatbot) que proporciona respuestas precisas y relevantes basándose en información real de una empresa, usando herramientas de procesamiento de lenguaje natural para interacciones fluidas.",
-    "results": [
-      "Agente conversacional capaz de responder sobre datos propios del negocio",
-      "Interacciones fluidas mediante procesamiento de lenguaje natural",
-      "Arquitectura basada en LangChain, n8n y MCP"
-    ],
     "tech": [
       "Python",
       "LangChain",
       "n8n",
       "MCP"
     ],
-    "highlight": false
+    "category": "ai-agents",
+    "descriptionKey": "smartBusinessAgent"
   },
   {
     "id": "proptech-agent",
-    "title": "PropTech Agent",
     "company": null,
-    "tagline": "Agente de IA aplicado al sector inmobiliario para automatizar consultas y procesos de propiedades.",
     "type": "personal",
     "repoPublic": false,
     "period": "2026",
-    "problem": "Las inmobiliarias y agentes de bienes raíces dedican mucho tiempo a responder consultas repetitivas sobre propiedades disponibles, precios y condiciones.",
-    "solution": "Agente de IA enfocado en el dominio proptech que automatiza la atención de consultas sobre propiedades, integrando datos de catálogo y respondiendo en lenguaje natural a clientes potenciales.",
-    "results": [
-      "Automatización de consultas frecuentes sobre propiedades",
-      "Reducción del tiempo de respuesta a clientes potenciales",
-      "Proyecto experimental en desarrollo activo"
-    ],
     "tech": [
       "Python",
       "LangChain",
@@ -293,50 +105,35 @@
       "RAG",
       "FastAPI"
     ],
-    "highlight": false
+    "category": "ai-agents",
+    "descriptionKey": "proptechAgent"
   },
   {
     "id": "grpc-pycon-chile-2025",
-    "title": "Mejora de Velocidad y Transmisión de Datos con gRPC",
     "company": null,
-    "tagline": "Material y código del taller de gRPC dictado en PyCon Chile 2025.",
     "type": "personal",
     "repoPublic": true,
     "period": "2025",
-    "problem": "Muchos desarrolladores Python conocen REST pero no han trabajado con gRPC, un framework RPC de alto rendimiento clave para comunicación eficiente entre servicios.",
-    "solution": "Aplicación enfocada en optimizar la velocidad y el manejo de datos utilizando gRPC para establecer una comunicación eficiente y de baja latencia entre servicios, dictada como taller en PyCon Chile 2025.",
-    "results": [
-      "Taller dictado en PyCon Chile 2025",
-      "Repositorio público con ejemplos prácticos de gRPC en Python",
-      "Comunicación de baja latencia entre servicios"
-    ],
     "tech": [
       "Python",
       "gRPC"
     ],
-    "highlight": false
+    "category": "backend",
+    "descriptionKey": "grpcPyconChile"
   },
   {
     "id": "fast-todo",
-    "title": "Fast Todo",
     "company": null,
-    "tagline": "API de tareas con endpoints REST y GraphQL implementados sobre el mismo dominio con FastAPI.",
     "type": "personal",
     "repoPublic": true,
     "period": "2024",
-    "problem": "Comparar en la práctica los enfoques REST y GraphQL sobre un mismo dominio de datos, para entender sus diferencias de diseño, consultas y rendimiento.",
-    "solution": "Implementación de una API de gestión de tareas (todo list) con FastAPI, exponiendo el mismo dominio mediante endpoints REST y un esquema GraphQL, permitiendo comparar ambos enfoques bajo las mismas reglas de negocio.",
-    "results": [
-      "API funcional con doble interfaz: REST y GraphQL",
-      "Repositorio público como referencia de ambos enfoques con FastAPI",
-      "Base reutilizable para experimentar con nuevas features de FastAPI"
-    ],
     "tech": [
       "Python",
       "FastAPI",
       "GraphQL",
       "REST APIs"
     ],
-    "highlight": false
+    "category": "backend",
+    "descriptionKey": "fastTodo"
   }
 ]
