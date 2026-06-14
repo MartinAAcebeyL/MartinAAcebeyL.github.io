@@ -33,7 +33,7 @@ export const translations = {
       title: 'About Me',
       journey: 'I started building web applications for local businesses in Bolivia — four projects delivered, zero tolerance for missed deadlines. That led me to lead a team of five distributed developers across three time zones for a U.S. startup, where I understood that quality software isn\'t just clean code: it\'s measurable impact on real systems.',
       current: 'Today I work at Envíame (Santiago, remote) as a Backend & AI Engineer. I implemented RAG architectures with ADK and LangChain that improved our internal systems accuracy by 70%, and reduced latency between microservices by 25% by migrating to gRPC. My niche is the intersection between robust backends and applied AI: I don\'t just build the system, I make it smart.',
-      community: 'I organize and speak at Python community events — PyConChile 2025, PyDay La Paz 2024 — and competed in ACM-ICPC ranking among the top 90 in LATAM. The technical community isn\'t extra: it\'s where I learn fastest.',
+      community: 'I organize and speak at Python community events — PyCon Chile 2025, PyDay La Paz 2024 — and competed in ACM-ICPC ranking among the top 90 in LATAM. The technical community isn\'t extra: it\'s where I learn fastest.',
       metrics: {
         years: { value: '4+', label: 'Years of experience', sublabel: 'Backend & AI engineer' },
         // accuracy: { value: '70%', label: 'AI Accuracy Improvement', sublabel: 'RAG with ADK · Envíame' },
@@ -152,6 +152,8 @@ export const translations = {
       publications: 'Publications',
       viewArticle: 'Read Article',
       viewVideo: 'Watch Video',
+      showMore: 'Show more',
+      showLess: 'Show less',
     },
     // Social
     social: {
@@ -180,6 +182,10 @@ export const translations = {
       restVsGrpc: 'Technical comparison between REST and gRPC architectures with real use cases.',
       voiceInterface: 'How to implement voice interfaces with AI to improve user experience.',
       pastSelf: 'Reflections on a programming career: lessons learned and advice for beginners.',
+    },
+    // Publication titles (only for titles that need translation)
+    publicationTitles: {
+      pastSelf: 'Things I\'d tell my past self',
     },
     // Project descriptions
     projectDescriptions: {
@@ -292,26 +298,68 @@ export const translations = {
     // Community items
     communityItems: {
       pyconchile: {
-        role: 'Speaker',
-        desc: 'Talk on RAG architectures with ADK and LangChain for production systems.',
-      },
-      pyday: {
-        role: 'Speaker',
-        desc: 'Presentation on Python for high-availability backends.',
+        title: 'PyCon Chile 2025',
+        role: 'Workshop',
+        desc: 'Workshop "Is a gRPC API synonymous with speed?" at PyCon Chile 2025, Viña del Mar.',
       },
       acmicpc: {
+        title: 'ACM-ICPC LATAM',
         role: 'Top 90 LATAM',
         desc: 'International algorithmic programming competition. Top 90 in Latin America, Top 50 Bolivia.',
       },
       mention: {
-        role: 'UMSS',
-        desc: 'Academic honor mention at Universidad Mayor de San Simón, Cochabamba.',
+        title: 'Honor Mention',
+        role: 'USFX',
+        desc: 'Academic honor mention at Universidad San Francisco Xavier de Chuquisaca.',
+      },
+      pythonSucreLead: {
+        title: 'Python Sucre',
+        role: 'Community Lead',
+        desc: 'Lead organizer of the Python Sucre community, promoting Python adoption through talks and meetups.',
+      },
+      pythonSucreSummit: {
+        title: 'Python Sucre Summit',
+        role: 'Co-organizer',
+        desc: 'Co-organized the Python Sucre Summit, a local event bringing together the Python community.',
+      },
+      pyconBolivia: {
+        title: 'PyCon Bolivia',
+        role: 'Contributor',
+        desc: 'Contributed to the planning and execution of PyCon Bolivia 2022 and 2023.',
+      },
+      acmSucre: {
+        title: 'ACM-Sucre',
+        role: 'Active Member',
+        desc: 'Active member of ACM-Sucre, a community focused on competitive programming.',
+      },
+      pyladiesCochabamba: {
+        title: 'PyLadies Cochabamba',
+        role: 'Active Member',
+        desc: 'Active member of the PyLadies Cochabamba community.',
+      },
+      grpcPyday: {
+        title: 'PyDay La Paz 2024',
+        role: 'Speaker',
+        desc: 'Talk on building fast, scalable applications with gRPC and Python, presented at PyDay La Paz 2024.',
+      },
+      pyConAltura: {
+        title: 'PyCon con Altura',
+        role: 'Speaker',
+        desc: 'Talk on the before and after of landing your first job as a developer, sharing technical and career advice to help you save time and avoid common mistakes.',
       },
     },
     // Community section labels
     communityLabels: {
       certifications: 'Certifications',
       communityParticipation: 'Community Participation',
+    },
+    // Legend labels for the community snake
+    communityTypes: {
+      talk: 'talk',
+      workshop: 'workshop',
+      meetup: 'meetup',
+      competition: 'competition',
+      award: 'award',
     },
     // Footer
     footer: {
@@ -351,7 +399,7 @@ export const translations = {
       title: 'Sobre Mí',
       journey: 'Empecé construyendo aplicaciones web para negocios locales en Bolivia — cuatro proyectos entregados, cero tolerancia a los plazos incumplidos. Eso me llevó a liderar un equipo de cinco developers distribuidos en tres zonas horarias para una startup de EE.UU., donde entendí que el software de calidad no es solo código limpio: es impacto medible en sistemas reales.',
       current: 'Hoy trabajo en Envíame (Santiago, remoto) como Backend & AI Engineer. Implementé arquitecturas RAG con ADK y LangChain que mejoraron la precisión de nuestros sistemas internos en 70%, y reduje la latencia entre microservicios en 25% migrando a gRPC. Mi nicho es la intersección entre backends robustos y IA aplicada: no solo construyo el sistema, lo hago inteligente.',
-      community: 'Organizo y hablo en eventos de la comunidad Python — PyConChile 2025, PyDay La Paz 2024 — y competí en ACM-ICPC quedando entre los 90 mejores de LATAM. La comunidad técnica no es un extra: es donde aprendo más rápido.',
+      community: 'Organizo y hablo en eventos de la comunidad Python — PyCon Chile 2025, PyDay La Paz 2024 — y competí en ACM-ICPC quedando entre los 90 mejores de LATAM. La comunidad técnica no es un extra: es donde aprendo más rápido.',
       metrics: {
         years: { value: '4+', label: 'Años de experiencia', sublabel: 'Backend & AI' },
         accuracy: { value: '70%', label: 'Mejora en precisión IA', sublabel: 'RAG con ADK · Envíame' },
@@ -470,6 +518,8 @@ export const translations = {
       publications: 'Publicaciones',
       viewArticle: 'Leer Artículo',
       viewVideo: 'Ver Video',
+      showMore: 'Ver más',
+      showLess: 'Ver menos',
     },
     // Social
     social: {
@@ -498,6 +548,10 @@ export const translations = {
       restVsGrpc: 'Comparativa técnica entre arquitecturas REST y gRPC con casos de uso reales.',
       voiceInterface: 'Cómo implementar interfaces de voz con IA para mejorar la experiencia de usuario.',
       pastSelf: 'Reflexiones sobre la carrera en programación: lecciones aprendidas y consejos para principiantes.',
+    },
+    // Títulos de publicaciones (solo los que requieren traducción)
+    publicationTitles: {
+      pastSelf: 'Cosas que le diría a mi yo del pasado',
     },
     // Descripciones de proyectos
     projectDescriptions: {
@@ -610,26 +664,68 @@ export const translations = {
     // Elementos de comunidad
     communityItems: {
       pyconchile: {
-        role: 'Speaker',
-        desc: 'Charla sobre arquitecturas RAG con ADK y LangChain para sistemas de producción.',
-      },
-      pyday: {
-        role: 'Speaker',
-        desc: 'Presentación sobre Python para backends de alta disponibilidad.',
+        title: 'PyCon Chile 2025',
+        role: 'Taller',
+        desc: 'Taller "¿Una API gRPC es sinónimo de velocidad?" en PyCon Chile 2025, Viña del Mar.',
       },
       acmicpc: {
+        title: 'ACM-ICPC LATAM',
         role: 'Top 90 LATAM',
         desc: 'Competencia internacional de programación algorítmica. Top 90 de Latinoamérica, Top 50 Bolivia.',
       },
       mention: {
+        title: 'Mención de Honor',
         role: 'UMSS',
         desc: 'Mención de honor académica en la Universidad Mayor de San Simón, Cochabamba.',
+      },
+      pythonSucreLead: {
+        title: 'Python Sucre',
+        role: 'Community Lead',
+        desc: 'Líder organizador de la comunidad Python Sucre, promoviendo la adopción de Python mediante charlas y meetups.',
+      },
+      pythonSucreSummit: {
+        title: 'Python Sucre Summit',
+        role: 'Co-organizador',
+        desc: 'Co-organizador de la Python Sucre Summit, un evento local que reúne a la comunidad Python.',
+      },
+      pyconBolivia: {
+        title: 'PyCon Bolivia',
+        role: 'Colaborador',
+        desc: 'Contribuí en la planificación y ejecución de PyCon Bolivia 2022 y 2023.',
+      },
+      acmSucre: {
+        title: 'ACM-Sucre',
+        role: 'Miembro Activo',
+        desc: 'Miembro activo de la comunidad ACM-Sucre, dedicada a la programación competitiva.',
+      },
+      pyladiesCochabamba: {
+        title: 'PyLadies Cochabamba',
+        role: 'Miembro Activo',
+        desc: 'Miembro activo de la comunidad PyLadies Cochabamba.',
+      },
+      grpcPyday: {
+        title: 'PyDay La Paz 2024',
+        role: 'Speaker',
+        desc: 'Charla sobre cómo potenciar aplicaciones rápidas y escalables con gRPC y Python, presentada en PyDay La Paz 2024.',
+      },
+      pyConAltura: {
+        title: 'PyCon con Altura',
+        role: 'Speaker',
+        desc: 'Charla sobre el antes y el después de conseguir tu primer empleo como programador, compartiendo consejos técnicos y de carrera para ahorrar tiempo y evitar errores comunes.',
       },
     },
     // Etiquetas sección comunidad
     communityLabels: {
       certifications: 'Certificaciones',
       communityParticipation: 'Participación Comunitaria',
+    },
+    // Etiquetas de leyenda para la serpiente de comunidad
+    communityTypes: {
+      talk: 'charla',
+      workshop: 'taller',
+      meetup: 'meetup',
+      competition: 'competencia',
+      award: 'premio',
     },
     // Footer
     footer: {
