@@ -99,32 +99,6 @@ export default function Contact({ config }: Props) {
             </p>
           </motion.div>
         </div>
-
-        {/* Extra links */}
-        <motion.div
-          className="mt-8 flex flex-wrap gap-4 justify-center"
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.55 }}
-        >
-          <a href={config.contact.github} target="_blank" rel="noopener noreferrer"
-            className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
-            {t.contact.github} ↗
-          </a>
-          <a href={config.contact.leetcode} target="_blank" rel="noopener noreferrer"
-            className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
-            LeetCode ↗
-          </a>
-          <a href={config.contact.codeforces} target="_blank" rel="noopener noreferrer"
-            className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
-            Codeforces ↗
-          </a>
-          <a href={language === 'es' ? '/Martin-Acebey-CV-ES.pdf' : '/Martin-Acebey-CV-EN.pdf'}
-            download
-            className="text-sm font-mono text-zinc-500 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
-            {t.nav.downloadCV} ↗
-          </a>
-        </motion.div>
       </div>
     </section>
   );

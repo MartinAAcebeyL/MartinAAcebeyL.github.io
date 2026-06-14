@@ -44,18 +44,15 @@ export default function Social({ config }: Props) {
       color: 'hover:border-amber-500/40 dark:hover:border-amber-400/40',
     },
     {
-      name: 'Codeforces',
-      icon: '🏅',
-      url: config.contact.codeforces,
-      stats: [
-        { label: t.social.rating, value: config.socialStats.codeforces.rating },
-      ],
-      color: 'hover:border-red-500/40 dark:hover:border-red-400/40',
+      name: 'Instagram',
+      icon: '📸',
+      url: config.contact.instagram,
+      color: 'hover:border-pink-500/40 dark:hover:border-pink-400/40',
     },
     {
-      name: 'HackerRank',
-      icon: '👨‍💻',
-      url: config.contact.hackerrank,
+      name: 'Linktree',
+      icon: '🌳',
+      url: config.contact.linktree,
       color: 'hover:border-emerald-500/40 dark:hover:border-emerald-400/40',
     },
   ];

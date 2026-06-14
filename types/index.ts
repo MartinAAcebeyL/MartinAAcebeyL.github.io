@@ -69,7 +69,6 @@ export interface SiteConfig {
   fullName: string;
   role: string;
   tagline: string;
-  location: string;
   availability: boolean;
   availabilityLabel: string;
   siteUrl: string;
@@ -84,6 +83,8 @@ export interface SiteConfig {
     leetcode: string;
     codeforces: string;
     hackerrank: string;
+    instagram: string;
+    linktree: string;
     cvUrl: string;
   };
   nav: NavItem[];

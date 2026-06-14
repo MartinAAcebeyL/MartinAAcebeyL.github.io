@@ -6,7 +6,6 @@ const siteConfig: SiteConfig = {
   fullName: "Martin Andres Acebey Laime",
   role: "Backend & AI Engineer",
   tagline: "Construyo microservicios Python de alta disponibilidad e integro IA que genera impacto medible.",
-  location: "Cochabamba, Bolivia",
   availability: true,
   availabilityLabel: "Disponible para proyectos remotos",
 
@@ -31,12 +30,14 @@ const siteConfig: SiteConfig = {
   // ─── Redes Sociales & Contacto ───────────────────────────────
   contact: {
     email: "martinaacbyl2000@gmail.com",
-    linkedin: "https://www.linkedin.com/in/martinacebey-l",
+    linkedin: "https://www.linkedin.com/in/martin-acebey-l/",
     github: "https://github.com/MartinAAcebeyL",
     githubUsername: "MartinAAcebeyL",
     leetcode: "https://leetcode.com/u/MartinAAcebeyL/",
     codeforces: "https://codeforces.com/profile/martin2000",
     hackerrank: "https://www.hackerrank.com/profile/martinaacbyl2000",
+    instagram: "https://www.instagram.com/martin_acebey/",
+    linktree: "https://linktr.ee/MartinAAcebeyL", 
     cvUrl: "/cv-martin-acebey.pdf",
   },
 
@@ -139,11 +140,11 @@ const siteConfig: SiteConfig = {
   // ─── Redes Sociales Stats (para sección Social) ──────────────
   socialStats: {
     github: {
-      repos: '50+',
-      stars: '100+',
+      repos: '70+',
+      stars: '10+',
     },
     leetcode: {
-      problems: '200+',
+      problems: '350+',
       rating: 'Top 10%',
     },
     codeforces: {

@@ -21,7 +21,6 @@ export const translations = {
       viewProjects: 'View Projects',
       downloadCV: 'Download CV',
       availability: 'Available for remote projects',
-      location: 'Cochabamba, Bolivia',
       metrics: {
         accuracy: { value: '70%', label: 'AI Accuracy Boost', context: 'RAG in production' },
         requests: { value: '10k+', label: 'Requests/day', context: '99.5% uptime' },
@@ -387,7 +386,6 @@ export const translations = {
       description: '4+ años diseñando y optimizando backends distribuidos en HealthTech, HRTech y Logistics.',
       viewProjects: 'Ver Proyectos',
       downloadCV: 'Descargar CV',
-      location: 'Cochabamba, Bolivia',
       metrics: {
         accuracy: { value: '70%', label: 'Mejora en precisión IA', context: 'RAG en producción' },
         requests: { value: '10k+', label: 'Requests/día', context: '99.5% uptime' },
